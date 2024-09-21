@@ -1,0 +1,155 @@
+:root {
+    --bs-body-bg: #59981A !important;
+    --bs-primary: #59981A !important;
+    --bs-secondary-color: #F7E2C7 !important;
+    --bs-tertiary-bg: #161616 !important;
+    --bs-font-title: '' !important;
+    /* --bs-font-paragraph: 'Poppins' !important; */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+head {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 * {
+    font-family: var(--bs-font-title) !important;
+    color: var(--bs-secondary-color) !important;
+}
+
+h6,
+strong {
+    font-family: var(--bs-font-title) !important;
+    color: var(--bs-primary) !important;
+    font-size: bolder !important;
+}
+
+p,
+small {
+    font-family: var(--bs-font-title) !important;
+    color: var(--bs-secondary-color) !important;
+    font-size: bolder !important;
+}
+
+/* --- SCROLL-BAR --- */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bs-body-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bs-primary);
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } */
+
+
+
+#logo {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.btn {
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-secondary-color) !important;
+    border-color: var(--bs-secondary-color) !important;
+    font-weight: 400 !important;
+}
+
+.btn:hover,
+.btn svg:hover {
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-primary) !important;
+    border-color: var(--bs-secondary-color);
+    font-weight: 400 !important;
+}
+
+.bi {
+    color: var(--bs-secondary-color) !important;
+}
+
+/* Escritorio */
+@media only screen and (min-width: 1024px) {
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #home {
+        margin-top: 40px;
+    }
+}
+
+/* Laptops */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 70px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 40px;
+    }
+}
+
+/* Celulares */
+@media only screen and (max-width: 767px) {
+    body {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #home {
+        margin-top: 11px;
+    }
+
+    #services .services-body {
+        margin-top: 0;
+    }
+
+    footer .col,
+    footer a,
+    footer ul {
+        justify-content: center;
+    }
+
+    footer .col {
+        text-align: center;
+        justify-content: center;
+    }
+}
