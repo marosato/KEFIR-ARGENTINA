@@ -235,4 +235,5 @@ small {
     height: 100%;
     object-fit: cover;
     filter: blur(5px);
+    opacity: 0.5;
 }
