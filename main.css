@@ -192,6 +192,7 @@ small {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 400px;
 }
 
 /*  -------------------------------------------------
@@ -203,4 +204,11 @@ small {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+
+#carouselExampleDark img {
+    width: 400px;
+    height: 400px;
 }
