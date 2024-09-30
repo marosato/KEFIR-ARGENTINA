@@ -119,18 +119,6 @@ small {
         margin: 0 auto;
         padding: 70px;
     }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    small,
-    strong * {
-        text-align: center !important;
-    }
 }
 
 /* Tablet */
@@ -140,18 +128,6 @@ small {
         margin: 0 auto;
         padding: 40px;
     }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    small,
-    strong * {
-        text-align: center !important;
-    }
 }
 
 /* Celulares */
@@ -160,18 +136,6 @@ small {
         max-width: 100%;
         margin: 0 auto;
         padding: 10px;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    small,
-    strong * {
-        text-align: center !important;
     }
 
     #home {
