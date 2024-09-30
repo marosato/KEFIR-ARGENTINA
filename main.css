@@ -138,6 +138,16 @@ small {
         padding: 10px;
     }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6, p,
+    small, strong * {
+        text-align: center !important;
+    }
+
     #home {
         margin-top: 11px;
     }
@@ -182,5 +192,3 @@ small {
     background-repeat: no-repeat;
     height: 300px;
 }
-
-
