@@ -95,6 +95,10 @@ small {
     color: var(--bs-secondary-color) !important;
 }
 
+/*  -------------------------------------
+    |             M E D I A             |
+    -------------------------------------  */
+
 /* Escritorio */
 @media only screen and (min-width: 1024px) {
     body {
@@ -154,8 +158,9 @@ small {
     }
 }
 
-
-
+/*  -----------------------------------
+    |             H O M E             |
+    -----------------------------------  */
 
 /* #home .home-body {
     background-image: url('https://food.fnr.sndimg.com/content/dam/images/food/fullset/2024/05/23/kefir-in-glass-jar-and-on-wooden-spoon-on-burlap-bag.jpg.rend.hgtvcom.1280.960.suffix/1716467858997.jpeg') !important;
@@ -165,6 +170,10 @@ small {
     height: 500px;
 } */
 
+
+/*  -------------------------------------
+    |             T Y P E S             |
+    -------------------------------------  */
 
 #types .types-body {
     background-image: url('https://t1.uc.ltmcdn.com/es/posts/3/8/1/como_conservar_el_kefir_45183_orig.jpg') !important;
