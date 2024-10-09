@@ -237,3 +237,58 @@ small {
     filter: blur(5px);
     opacity: 0.9;
 }
+
+
+
+#FAQs .accordion-item {
+    background-color: var(--bs-tertiary-bg);
+    color: var(--bs-secondary-color);
+}
+
+:root {
+    --accordion-bg-color: #f7f7f7;
+    /* background color of the accordion */
+    --accordion-text-color: #333;
+    /* text color of the accordion */
+    --accordion-header-bg-color: #eee;
+    /* background color of the accordion header */
+    --accordion-header-text-color: #666;
+    /* text color of the accordion header */
+    --accordion-button-bg-color: #ddd;
+    /* background color of the accordion button */
+    --accordion-button-text-color: #444;
+    /* text color of the accordion button */
+    --accordion-button-hover-bg-color: var(--bs-secondary-color);
+    /* background color of the accordion button on hover */
+    --accordion-button-hover-text-color: #ee0e0e;
+    /* text color of the accordion button on hover */
+    --accordion-collapse-bg-color: var(--bs-body-bg);
+    /* background color of the accordion collapse */
+    --accordion-collapse-text-color: var(var(--bs-secondary-color))
+    /* text color of the accordion collapse */
+}
+
+.accordion {
+    background-color: var(--accordion-bg-color);
+    color: var(--accordion-text-color);
+}
+
+.accordion-header {
+    background-color: var(--accordion-header-bg-color);
+    color: var(--accordion-header-text-color);
+}
+
+.accordion-button {
+    background-color: var(--accordion-button-bg-color);
+    color: var(--accordion-button-text-color);
+}
+
+.accordion-button:hover {
+    background-color: var(--accordion-button-hover-bg-color);
+    color: var(--accordion-button-hover-text-color);
+}
+
+.accordion-collapse {
+    background-color: var(--accordion-collapse-bg-color);
+    color: var(--accordion-collapse-text-color);
+}
