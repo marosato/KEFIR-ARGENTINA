@@ -339,9 +339,12 @@
                                     <p class="lead">
                                         Ambas leches son ideales para obtener un kéfir cremoso y lleno de probióticos.
                                     </p>
+
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                                        <button type="button"
+                                            class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                                        <button type="button"
+                                            class="btn btn-outline-secondary btn-lg px-4">Default</button>
                                     </div>
                                 </div>
                             </div>
@@ -374,13 +377,58 @@
                                     Ambas leches son ideales para obtener un kéfir cremoso y lleno de probióticos.
                                 </p>
                                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"
+                                        id="boton-imagen-1">
+                                        Mostrame la Leche Casanto </button>
+
+
                                     <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary
                                         button</button>
                                     <button type="button"
                                         class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
                                 </div>
                             </div>
-                            <div class="overflow-hidden text-center">
+
+                            <!-- Botón para mostrar la imagen -->
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" id="boton-imagen-1">
+                                Mostrame la Leche Casanto </button>
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" id="boton-imagen-2">
+                                Mostrame la Leche La Serenísima </button>
+
+                            <img id="leche-casanto"
+                                src="https://ardiaprod.vtexassets.com/arquivos/ids/326409-800-auto?v=638599594765300000&width=800&height=auto&aspect=true"
+                                class="img-fluid border rounded-3 shadow-lg mb-4" alt="Imagen" width="400" height="500"
+                                loading="lazy" style="display: none; max-width: 100%; height: auto;">
+
+                            <img id="leche-serenísima"
+                                src="https://jumboargentina.vtexassets.com/arquivos/ids/760452-800-auto?v=638049118130500000&width=800&height=auto&aspect=true"
+                                class="img-fluid border rounded-3 shadow-lg mb-4" alt="Imagen" width="400" height="500"
+                                loading="lazy" style="display: none; max-width: 100%; height: auto;">
+
+                            <script>
+                                document.getElementById("boton-imagen-1").addEventListener("click", function () {
+                                    document.getElementById("leche-casanto").style.display = "block";
+                                });
+                                document.getElementById("boton-imagen-2").addEventListener("click", function () {
+                                    document.getElementById("leche-serenísima").style.display = "block";
+                                });
+                            </script>
+
+                            <!-- Botón para mostrar la imagen -->
+
+
+                            <img id="imagen"
+                                src="https://ardiaprod.vtexassets.com/arquivos/ids/326409-800-auto?v=638599594765300000&width=800&height=auto&aspect=true"
+                                class="img-fluid border rounded-3 shadow-lg mb-4" alt="Imagen" width="400" height="500"
+                                loading="lazy" style="display: none; max-width: 100%; height: auto;">
+
+                            <script>
+                                document.getElementById("boton-imagen").addEventListener("click", function () {
+                                    document.getElementById("imagen").style.display = "block";
+                                });
+                            </script>
+
+                            <!-- <div class="overflow-hidden text-center">
                                 <div class="container px-5">
                                     <img src="https://ardiaprod.vtexassets.com/arquivos/ids/326409-800-auto?v=638599594765300000&width=800&height=auto&aspect=true"
                                         class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
@@ -389,17 +437,13 @@
                                         class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
                                         width="400" height="500" loading="lazy">
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-
-                        It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables.
                     </div>
                 </div>
-
             </div>
+
+
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
