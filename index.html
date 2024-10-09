@@ -399,19 +399,17 @@
                             </div>
 
                             <!-- Botón para mostrar la imagen -->
-
-
-
                             <script>
                                 document.getElementById("button-casanto").addEventListener("click", function () {
-                                    document.getElementById("leche-casanto").style.display = "block";
+                                    var lecheCasanto = document.getElementById("leche-casanto");
+                                    lecheCasanto.style.display = lecheCasanto.style.display === "block" ? "none" : "block";
                                 });
+
                                 document.getElementById("button-serenisima").addEventListener("click", function () {
-                                    document.getElementById("leche-serenisima").style.display = "block";
+                                    var lecheSerenisima = document.getElementById("leche-serenisima");
+                                    lecheSerenisima.style.display = lecheSerenisima.style.display === "block" ? "none" : "block";
                                 });
                             </script>
-
-                            <!-- Botón para mostrar la imagen -->
 
 
                             <img id="imagen"
