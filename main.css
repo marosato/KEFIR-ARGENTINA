@@ -41,7 +41,8 @@ h6,
 strong {
     font-family: var(--bs-font-title) !important;
     color: var(--bs-primary) !important;
-    font-size: bolder !important;
+    font-weight: 900 !important;
+    /* font-style: italic; */
 }
 
 p,
@@ -258,9 +259,11 @@ small {
     /* background color of the accordion button */
     --accordion-button-text-color: #444;
     /* text color of the accordion button */
+
+
     --accordion-button-hover-bg-color: var(--bs-secondary-color);
     /* background color of the accordion button on hover */
-    --accordion-button-hover-text-color: #ee0e0e;
+    --accordion-button-hover-text-color: var(--bs-body-bg);
     /* text color of the accordion button on hover */
     --accordion-collapse-bg-color: var(--bs-tertiary-bg);
     /* background color of the accordion collapse */
