@@ -255,8 +255,7 @@ small {
     /* background color of the accordion header */
     --accordion-header-text-color: #666;
     /* text color of the accordion header */
-    --accordion-button-bg-color: #ddd;
-    /* background color of the accordion button */
+
     --accordion-button-text-color: #444;
     /* text color of the accordion button */
 
@@ -282,8 +281,8 @@ small {
 }
 
 .accordion-button {
-    background-color: var(--accordion-button-bg-color);
-    color: var(--accordion-button-text-color);
+    background-color: var(--bs-tertiary-bg) !important;
+    color: var(--bs-secondary-color) !important;
 }
 
 .accordion-button:hover {
