@@ -348,9 +348,11 @@ nav .navbar-icon svg {
 }
 
 .accordion-button:hover {
-    background-color: var(--bs-tertiary-bg) !important;
-    color: var(--accordion-button-hover-text-color);
+    background-color: var(--bs-body-bg) !important;
+    /* color: var(--bs-secondary-color) !important; */
 }
+
+
 
 .accordion-collapse {
     background-color: var(--accordion-collapse-bg-color);
