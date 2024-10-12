@@ -309,36 +309,17 @@ nav .navbar-icon svg {
     color: var(--bs-secondary-color);
 }
 
-:root {
-    --accordion-text-color: #333;
-    /* text color of the accordion */
-    --accordion-header-bg-color: #f10606;
-    /* background color of the accordion header */
-    --accordion-header-text-color: #666;
-    /* text color of the accordion header */
 
-    --accordion-button-text-color: #444;
-    /* text color of the accordion button */
-
-    --accordion-button-hover-bg-color: var(--bs-secondary-color);
-    /* background color of the accordion button on hover */
-    --accordion-button-hover-text-color: var(--bs-body-bg);
-    /* text color of the accordion button on hover */
-    --accordion-collapse-bg-color: var(--bs-primary);
-    /* background color of the accordion collapse */
-    --accordion-collapse-text-color: var(--bs-secondary-color);
-    /* text color of the accordion collapse */
-}
 
 .accordion {
-    background-color: var(--accordion-bg-color) !important;
+    background-color: var(--);
     color: var(--accordion-text-color) !important;
 
 }
 
 .accordion-header {
-    background-color: var(--bs-primary);
-    color: var(--accordion-header-text-color);
+    background-color: var(--bs-primary) !important;
+    color: var(--);
 }
 
 .accordion-button {
