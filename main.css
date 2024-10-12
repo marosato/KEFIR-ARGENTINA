@@ -240,11 +240,33 @@ nav .navbar-icon svg {
     |             T Y P E S             |
     -------------------------------------  */
 
-#types .types-body {
+/* #types .types-body {
     background-image: url('https://t1.uc.ltmcdn.com/es/posts/3/8/1/como_conservar_el_kefir_45183_orig.jpg') !important;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+} */
+
+
+#types .types-body {
+    position: relative;
+}
+
+#types .types-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#types .types-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+    opacity: 0.9;
 }
 
 /*  -----------------------------------------------
