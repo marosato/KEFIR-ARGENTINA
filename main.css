@@ -166,21 +166,21 @@ small {
     ---------------------------------------  */
 
 nav .navbar-brand {
-    color: var(--bs-primary) !important;
+    color: var(--bs-secondary-color) !important;
     font-family: var(--bs-font-title) !important;
     letter-spacing: 0.06em;
     font-weight: 500;
 }
 
 nav .navbar-brand:hover {
-    color: var(--bs-secondary-color) !important;
+    color: var(--bs-tertiary-bg) !important;
     font-weight: 500;
 }
 
 nav,
 nav a,
 nav .nav-link {
-    background-color: var(--bs-secondary-color) !important;
+    background-color: var(--bs-body-bg) !important;
     color: var(--bs-secondary-color) !important;
     font-family: var(--bs-font-paragraph) !important;
     font-weight: 500;
@@ -188,7 +188,7 @@ nav .nav-link {
 }
 
 nav .nav-link:hover {
-    color: var(--bs-primary) !important;
+    color: var(--bs-tertiary-bg) !important;
     font-family: var(--bs-font-paragraph) !important;
     font-weight: 500;
 }
