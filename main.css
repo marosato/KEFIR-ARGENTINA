@@ -77,6 +77,11 @@ small {
     color: var(--bs-secondary-color) !important;
 }
 
+.home-body, .about-body, .about-card, .types-card {
+    background-color: var(--bs-primary) !important;
+}
+
+
 /*  --------------------------------------
     |             SCROLL BAR             |
     --------------------------------------  */
@@ -305,8 +310,6 @@ nav .navbar-icon svg {
 }
 
 :root {
-    --accordion-bg-color: #f7f7f7;
-    /* background color of the accordion */
     --accordion-text-color: #333;
     /* text color of the accordion */
     --accordion-header-bg-color: #eee;
@@ -322,7 +325,7 @@ nav .navbar-icon svg {
     /* background color of the accordion button on hover */
     --accordion-button-hover-text-color: var(--bs-body-bg);
     /* text color of the accordion button on hover */
-    --accordion-collapse-bg-color: var(--bs-tertiary-bg);
+    --accordion-collapse-bg-color: var(--bs-primary);
     /* background color of the accordion collapse */
     --accordion-collapse-text-color: var(--bs-secondary-color);
     /* text color of the accordion collapse */
@@ -334,12 +337,12 @@ nav .navbar-icon svg {
 }
 
 .accordion-header {
-    background-color: var(--accordion-header-bg-color);
+    background-color: var(--bs-primary);
     color: var(--accordion-header-text-color);
 }
 
 .accordion-button {
-    background-color: var(--bs-tertiary-bg) !important;
+    background-color: var(--bs-primary) !important;
     color: var(--bs-secondary-color) !important;
 }
 
