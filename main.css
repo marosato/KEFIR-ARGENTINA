@@ -77,10 +77,6 @@ small {
     color: var(--bs-secondary-color) !important;
 }
 
-.about-body, .about-card, .types-card {
-    background-color: var(--bs-primary) !important;
-}
-
 
 /*  --------------------------------------
     |             SCROLL BAR             |
@@ -254,6 +250,14 @@ nav .navbar-icon svg {
 }
 
 /*  -------------------------------------
+    |             A B O U T             |
+    -------------------------------------  */
+
+.about-body, .about-card {
+    background-color: var(--bs-primary) !important;
+}
+
+/*  -------------------------------------
     |             T Y P E S             |
     -------------------------------------  */
 
@@ -263,6 +267,10 @@ nav .navbar-icon svg {
     background-position: center;
     background-repeat: no-repeat;
 } */
+
+.types-card {
+    background-color: var(--bs-primary) !important;
+}
 
 #types .types-body {
     position: relative;
