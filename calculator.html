@@ -92,7 +92,7 @@
     </header>
 
 
-    <div class="container py-4 mt-4" id="calculator">
+    <section class="container py-4 mt-4" id="calculator">
         <!-- <header class="pb-3 mb-4 border-bottom">
             <a href="#" class="d-flex align-items-center text-body-emphasis text-decoration-none">
                 <span class="fs-4"> Calculadora de Nódulos </span>
@@ -104,7 +104,8 @@
                 <h1 class="display-5 fw-bold"> Calculadora de Nódulos </h1>
                 <!-- <p class="col-md-10 fs-4">  </p> -->
                 <div class="form-text col-md-10 mb-3">
-                    Es importante tener en cuenta que la cantidad de nódulos de kéfir <strong>puede variar</strong> según el
+                    Es importante tener en cuenta que la cantidad de nódulos de kéfir <strong>puede variar</strong>
+                    según el
                     tipo de kéfir y la densidad de los nódulos.
                 </div>
                 <!-- <div class="form-text col-md-9 mb-3">
@@ -138,150 +139,55 @@
                         <div class="d-grid gap-2">
                             <button class="btn btn-outline-secondary btn-lg" type="submit"> Calcular </button>
                         </div>
-
                     </form>
                     <div id="results" class="mt-4"></div>
                 </div>
 
-
-                <script>
-                    document.getElementById('kefirForm').addEventListener('submit', handleFormSubmit);
-
-                    function handleFormSubmit(event) {
-                        event.preventDefault();
-
-                        const volumeInput = document.getElementById('volume');
-                        const noduleAmount = parseInt(volumeInput.value);
-
-                        if (isNaN(noduleAmount) || noduleAmount < 0) {
-                            displayError('Por favor, ingrese una cantidad válida de nódulos.');
-                            return;
-                        }
-
-                        const litersFermented = noduleAmount / 100;
-                        const glasses = calculateGlasses(litersFermented);
-
-                        displayResult(`Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented.toFixed(2)} litros de leche, lo que equivale a aproximadamente ${glasses} vasos.`);
-                    }
-
-                    function calculateGlasses(liters) {
-                        const glassCapacity = 0.25;
-                        return Math.floor(liters / glassCapacity);
-                    }
-
-                    function displayError(message) {
-                        const resultDiv = document.getElementById('results');
-                        resultDiv.innerHTML = message;
-                    }
-
-                    function displayResult(message) {
-                        const resultDiv = document.getElementById('results');
-                        resultDiv.innerHTML = `RESULTADO: ${message}`;
-                    }
-                </script>
-
-
-
-
-
             </div>
         </div>
-
         <footer class="pt-3 mt-4 text-body-secondary border-top">
             © 2024 KÉFIR ARGENTINA
         </footer>
-    </div>
+    </section>
 
 
-    <div class="container mt-5" id="calculator">
-        <h1 class="mb-4"> Calculadora de Nódulos </h1>
-        <form id="kefirForm">
-            <!-- Cantidad de Kéfir - Opción #1 -->
-            <div class="form-floating mb-4">
-                <input type="number" class="form-control" id="volume" required>
-                <label for="volume"> Cantidad deseada de Kéfir (en litros): </label>
-            </div>
-            <!-- Cantidad de Kéfir - Opción #2 -->
-            <!-- <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="floatingInput" placeholder="1000ml">
-                <label for="floatingInput"> Cantidad deseada de Kéfir (en litros): </label>
-            </div> -->
-            <!-- Tipo de Kéfir -->
-            <div class="form-floating mb-4">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected=""> ... </option>
-                    <option value="1"> Leche </option>
-                    <option value="2"> Agua </option>
-                </select>
-                <label for="floatingSelect"> Seleccione un tipo de kéfir </label>
-            </div>
+    <!-- JAVASCRIPT -->
+    <script>
+        // CALCULATOR
+        document.getElementById('kefirForm').addEventListener('submit', handleFormSubmit);
 
-            <div class="d-grid gap-2">
-                <button class="btn btn-outline-secondary btn-lg" type="submit"> Calcular </button>
-            </div>
-        </form>
-        <div id="results" class="mt-4"></div>
-    </div>
+        function handleFormSubmit(event) {
+            event.preventDefault();
 
+            const volumeInput = document.getElementById('volume');
+            const noduleAmount = parseInt(volumeInput.value);
 
-    <div class="container mt-5">
-        <h1> Calculadora de Nódulos </h1>
-        <form id="kefirForm">
-            <!-- Cantidad de Kéfir: Opción 1 -->
-            <div class="form-group mb-3">
-                <label for="volume" class="form-label"> Cantidad de Kéfir (en litros): </label>
-                <input type="number" class="form-control" id="volume" required>
-            </div>
-            <!-- Tipo de Kéfir: Opción 2 -->
-            <div class="mb-3">
-                <label for="disabledSelect" class="form-label"> Tipo de Kéfir: </label>
-                <select id="disabledSelect" class="form-select">
-                    <option selected=""> Elegir... </option>
-                    <option value="1"> Leche </option>
-                    <option value="2"> Agua </option>
-                    <option value="3"> </option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary"> Calcular </button>
-        </form>
-        <div id="results" class="mt-4"></div>
-    </div>
+            if (isNaN(noduleAmount) || noduleAmount < 0) {
+                displayError('Por favor, ingrese una cantidad válida de nódulos.');
+                return;
+            }
 
+            const litersFermented = noduleAmount / 100;
+            const glasses = calculateGlasses(litersFermented);
 
+            displayResult(`Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented.toFixed(2)} litros de leche, lo que equivale a aproximadamente ${glasses} vasos.`);
+        }
 
+        function calculateGlasses(liters) {
+            const glassCapacity = 0.25;
+            return Math.floor(liters / glassCapacity);
+        }
 
+        function displayError(message) {
+            const resultDiv = document.getElementById('results');
+            resultDiv.innerHTML = message;
+        }
 
-    <br><br>
-
-
-    <div class="form-group mb-3">
-        <label for="type"> Tipo de Kéfir: </label>
-        <select class="form-control" id="type" required>
-            <option value="leche">Leche</option>
-            <option value="agua">Agua</option>
-        </select>
-    </div>
-
-    <div class="form-floating mb-3">
-        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-            <option selected=""> ... </option>
-            <option value="1"> Leche </option>
-            <option value="2"> Agua </option>
-            <option value="3"> </option>
-        </select>
-        <label for="floatingSelectDisabled"> Seleccione un tipo de kéfir </label>
-    </div>
-
-
-    <div class="form-floating mb-3">
-        <select id="disabledSelect" class="form-select">
-            <option value="leche"> Leche </option>
-            <option value="agua"> Agua </option>
-        </select>
-        <label for="disabledSelect" class="form-label"> Seleccione un tipo de kéfir </label>
-    </div>
-
-
+        function displayResult(message) {
+            const resultDiv = document.getElementById('results');
+            resultDiv.innerHTML = `RESULTADO: ${message}`;
+        }
+    </script>
 </body>
 
 </html>
