@@ -253,7 +253,8 @@ nav .navbar-icon svg {
     |             A B O U T             |
     -------------------------------------  */
 
-.about-body, .about-card {
+.about-body,
+.about-card {
     background-color: var(--bs-primary) !important;
 }
 
@@ -377,4 +378,18 @@ nav .navbar-icon svg {
 .accordion-collapse {
     background-color: var(--bs-primary) !important;
     color: var(--accordion-collapse-text-color);
+}
+
+
+
+
+
+
+
+#calculator #kefirForm .form-floating .form-select {
+    height: 70px;
+}
+
+#calculator #kefirForm .form-floating label {
+    font-size: 1.2rem;
 }
