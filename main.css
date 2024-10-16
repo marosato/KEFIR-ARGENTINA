@@ -149,6 +149,17 @@ small {
         margin-top: 0;
     }
 
+
+
+    #calculator #kefirForm .form-floating .form-select {
+        height: 70px;
+    }
+    
+    #calculator #kefirForm .form-floating label {
+        font-size: 1.2rem;
+    }
+
+
     footer .col,
     footer a,
     footer ul {
@@ -160,6 +171,16 @@ small {
         justify-content: center;
     }
 }
+
+
+#calculator #kefirForm .form-floating .form-select {
+    height: 70px;
+}
+
+#calculator #kefirForm .form-floating label {
+    font-size: 1.2rem;
+}
+
 
 
 /*  ---------------------------------------
@@ -386,10 +407,3 @@ nav .navbar-icon svg {
 
 
 
-#calculator #kefirForm .form-floating .form-select {
-    height: 70px;
-}
-
-#calculator #kefirForm .form-floating label {
-    font-size: 1.2rem;
-}
