@@ -149,10 +149,6 @@ small {
         margin-top: 0;
     }
 
-
-
-
-
     footer .col,
     footer a,
     footer ul {
@@ -166,12 +162,20 @@ small {
 }
 
 
-
-#calculator #kefirForm .form-floating label,
-#calculator #kefirForm .form-floating select,
 #calculator #kefirForm .form-floating input {
     font-size: 1.2rem;
 }
+
+#calculator #kefirForm .form-floating label {
+    font-size: 1.2rem;
+    color: var(--bs-secondary-color);
+}
+
+#calculator #kefirForm .form-floating select {
+    font-size: 1.2rem;
+    color: var(--bs-tertiary-bg);
+}
+
 
 #calculator #kefirForm .form-floating .form-select,
 #calculator #kefirForm .form-floating input {
