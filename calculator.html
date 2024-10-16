@@ -139,35 +139,47 @@
                     <div id="results" class="mt-4"></div>
                 </div>
 
+
                 <script>
-                    document.getElementById('kefirForm').addEventListener('submit', function (event) {
-                        event.preventDefault(); // Prevenir el envío del formulario
-                
-                        const noduleAmount = parseInt(document.getElementById('volume').value); // Obtener la cantidad de nódulos
-                        const resultDiv = document.getElementById('results');
-                
-                        // Verificar si la cantidad de nódulos es válida
+                    document.getElementById('kefirForm').addEventListener('submit', handleFormSubmit);
+            
+                    function handleFormSubmit(event) {
+                        event.preventDefault();
+            
+                        const volumeInput = document.getElementById('volume');
+                        const noduleAmount = parseInt(volumeInput.value);
+            
                         if (isNaN(noduleAmount) || noduleAmount < 0) {
-                            resultDiv.innerHTML = "Por favor, ingrese una cantidad válida de nódulos.";
+                            displayError('Por favor, ingrese una cantidad válida de nódulos.');
                             return;
                         }
-                
-                        // Calcular la cantidad de leche que se puede fermentar
-                        const litersFermented = noduleAmount / 100; // 100 gramos fermentan 1 litro de leche
-                
-                        resultDiv.innerHTML = `Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented.toFixed(2)} litros de leche.`;
-                
-                        // Modificar la función para devolver un número entero de vasos
-                        function calculateGlasses(liters) {
-                            const glassCapacity = 0.25; // Capacidad promedio de un vaso en litros
-                            const glasses = liters / glassCapacity;
-                            return Math.floor(glasses); // Redondear hacia abajo para obtener un entero
-                        }
-                
-                        // Modificar el código que muestra el resultado para incluir la cantidad de vasos
-                        resultDiv.innerHTML = `Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented.toFixed(2)} litros de leche, lo que equivale a aproximadamente ${calculateGlasses(litersFermented)} vasos.`;
-                    });
+            
+                        const litersFermented = noduleAmount / 100;
+                        const glasses = calculateGlasses(litersFermented);
+            
+                        displayResult(`Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented.toFixed(2)} litros de leche, lo que equivale a aproximadamente ${glasses} vasos.`);
+                    }
+            
+                    function calculateGlasses(liters) {
+                        const glassCapacity = 0.25;
+                        return Math.floor(liters / glassCapacity);
+                    }
+            
+                    function displayError(message) {
+                        const resultDiv = document.getElementById('results');
+                        resultDiv.innerHTML = message;
+                    }
+            
+                    function displayResult(message) {
+                        const resultDiv = document.getElementById('results');
+                        resultDiv.innerHTML = `RESULTADO: ${message}`;
+                    }
                 </script>
+
+
+
+
+
             </div>
         </div>
 
