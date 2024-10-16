@@ -167,6 +167,10 @@ small {
     --bs-calculator-fontsize: 1.2rem !important;
 }
 
+/* #calculator #kefirForm .btn {
+    background-color: var(--bs-primary) !important;
+} */
+
 #calculator #kefirForm .form-floating input {
     font-size: var(--bs-calculator-fontsize);
 }
