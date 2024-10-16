@@ -104,7 +104,9 @@
                 <h1 class="display-5 fw-bold"> Calculadora de Nódulos </h1>
                 <!-- <p class="col-md-10 fs-4">  </p> -->
                 <div class="form-text mb-3">
-                    Advertencia: Es importante tener en cuenta que la densidad de los nódulos de kéfir puede variar, por lo que la equivalencia en volumen no es del todo exacta. Aun así, se realiza una estimación aproximada.
+                    Advertencia: Es importante tener en cuenta que la densidad de los nódulos de kéfir puede variar, por
+                    lo que la equivalencia en volumen no es del todo exacta. No obstante, se puede hacer una estimación
+                    aproximada.
                 </div>
                 <!-- Form -->
                 <div class="mt-4">
@@ -140,34 +142,34 @@
 
                 <script>
                     document.getElementById('kefirForm').addEventListener('submit', handleFormSubmit);
-            
+
                     function handleFormSubmit(event) {
                         event.preventDefault();
-            
+
                         const volumeInput = document.getElementById('volume');
                         const noduleAmount = parseInt(volumeInput.value);
-            
+
                         if (isNaN(noduleAmount) || noduleAmount < 0) {
                             displayError('Por favor, ingrese una cantidad válida de nódulos.');
                             return;
                         }
-            
+
                         const litersFermented = noduleAmount / 100;
                         const glasses = calculateGlasses(litersFermented);
-            
+
                         displayResult(`Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented.toFixed(2)} litros de leche, lo que equivale a aproximadamente ${glasses} vasos.`);
                     }
-            
+
                     function calculateGlasses(liters) {
                         const glassCapacity = 0.25;
                         return Math.floor(liters / glassCapacity);
                     }
-            
+
                     function displayError(message) {
                         const resultDiv = document.getElementById('results');
                         resultDiv.innerHTML = message;
                     }
-            
+
                     function displayResult(message) {
                         const resultDiv = document.getElementById('results');
                         resultDiv.innerHTML = `RESULTADO: ${message}`;
