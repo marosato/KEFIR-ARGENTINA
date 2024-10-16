@@ -116,6 +116,30 @@
     </div>
 
 
+    <div class="container mt-5" id="calculator">
+        <h1 class="mb-3"> Calculadora de Nódulos para Kéfir </h1>
+        <form id="kefirForm">
+            <!-- Cantidad de Kéfir -->
+            <div class="form-floating mb-4">
+                <input type="number" class="form-control form-control-lg" id="volume" required>
+                <label for="volume"> Cantidad de Kéfir (en litros): </label>
+            </div>
+            <!-- Tipo de Kéfir -->
+            <div class="form-floating mb-4">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected=""> Elegir... </option>
+                    <option value="1"> Leche </option>
+                    <option value="2"> Agua </option>
+                    <option value="3"> </option>
+                </select>
+                <label for="floatingSelect"> Seleccione un tipo de kéfir </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg"> Calcular </button>
+        </form>
+        <div id="results" class="mt-4"></div>
+    </div>
+
+
     <div class="container mt-5">
         <h1> Calculadora de Nódulos para Kéfir </h1>
         <form id="kefirForm">
@@ -140,28 +164,7 @@
     </div>
 
 
-    <div class="container mt-5" id="calculator">
-        <h1> Calculadora de Nódulos para Kéfir </h1>
-        <form id="kefirForm">
-            <!-- Cantidad de Kéfir -->
-            <div class="form-floating mb-4">
-                <input type="number" class="form-control form-control-lg" id="volume" required>
-                <label for="volume"> Cantidad de Kéfir (en litros): </label>
-            </div>
-            <!-- Tipo de Kéfir -->
-            <div class="form-floating mb-4">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected=""> Elegir... </option>
-                    <option value="1"> Leche </option>
-                    <option value="2"> Agua </option>
-                    <option value="3"> </option>
-                </select>
-                <label for="floatingSelect"> Seleccione un tipo de kéfir </label>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg"> Calcular </button>
-        </form>
-        <div id="results" class="mt-4"></div>
-    </div>
+
 
 
     <br><br>
