@@ -40,7 +40,7 @@ h5 * {
 h6,
 strong {
     font-family: var(--bs-font-title) !important;
-    color: var(--bs-tertiary-bg) !important;
+    color: var(--bs-body-bg) !important;
     font-weight: 900 !important;
     /* font-style: italic; */
 }
