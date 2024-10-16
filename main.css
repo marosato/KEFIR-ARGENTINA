@@ -150,25 +150,6 @@ small {
     }
 
 
-    #calculator #kefirForm .form-floating input {
-        font-size: var(--bs-calculator-fontsize);
-    }
-
-    #calculator #kefirForm .form-floating label {
-        font-size: var(--bs-calculator-fontsize);
-        color: var(--bs-secondary-color);
-    }
-
-    #calculator #kefirForm .form-floating select {
-        font-size: var(--bs-calculator-fontsize);
-        color: var(--bs-tertiary-bg);
-    }
-
-    #calculator #kefirForm .form-floating .form-select,
-    #calculator #kefirForm .form-floating input {
-        height: 70px;
-    }
-
     footer .col,
     footer a,
     footer ul {
@@ -183,7 +164,7 @@ small {
 
 
 :root {
-    --bs-calculator-fontsize: 1.2rem;
+    --bs-calculator-fontsize: 1.2rem !important;
 }
 
 #calculator #kefirForm .form-floating input {
