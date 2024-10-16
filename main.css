@@ -162,17 +162,21 @@ small {
 }
 
 
+:root {
+    --bs-calculator-fontsize: 1.2rem;
+}
+
 #calculator #kefirForm .form-floating input {
-    font-size: 1.2rem;
+    font-size: var(--bs-calculator-fontsize);
 }
 
 #calculator #kefirForm .form-floating label {
-    font-size: 1.2rem;
+    font-size: var(--bs-calculator-fontsize);
     color: var(--bs-secondary-color);
 }
 
 #calculator #kefirForm .form-floating select {
-    font-size: 1.2rem;
+    font-size: var(--bs-calculator-fontsize);
     color: var(--bs-tertiary-bg);
 }
 
