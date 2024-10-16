@@ -167,7 +167,7 @@ small {
 
 
 
-#calculator #kefirForm .form-floating label {
+#calculator #kefirForm .form-floating label, #calculator #kefirForm .form-floating select {
     font-size: 1.2rem;
 }
 
