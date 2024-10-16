@@ -95,7 +95,7 @@
     <div class="container py-4 mt-4">
         <header class="pb-3 mb-4 border-bottom">
             <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-                <span class="fs-4"> Calculadora de Nódulos para Kéfir </span>
+                <span class="fs-4"> Calculadora de Nódulos </span>
             </a>
         </header>
 
@@ -116,12 +116,12 @@
 
 
     <div class="container mt-5" id="calculator">
-        <h1 class="mb-4"> Calculadora de Nódulos para Kéfir </h1>
+        <h1 class="mb-4"> Calculadora de Nódulos </h1>
         <form id="kefirForm">
             <!-- Cantidad de Kéfir -->
             <div class="form-floating mb-4">
                 <input type="number" class="form-control form-control-lg" id="volume" required>
-                <label for="volume"> Cantidad de Kéfir (en litros): </label>
+                <label for="volume"> Cantidad deseada de Kéfir (en litros): </label>
             </div>
             <!-- Tipo de Kéfir -->
             <div class="form-floating mb-4">
@@ -132,6 +132,12 @@
                 </select>
                 <label for="floatingSelect"> Seleccione un tipo de kéfir </label>
             </div>
+
+            <div class="form-floating mb-4">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+
             <button type="submit" class="btn btn-primary btn-lg"> Calcular </button>
         </form>
         <div id="results" class="mt-4"></div>
@@ -139,7 +145,7 @@
 
 
     <div class="container mt-5">
-        <h1> Calculadora de Nódulos para Kéfir </h1>
+        <h1> Calculadora de Nódulos </h1>
         <form id="kefirForm">
             <!-- Cantidad de Kéfir: Opción 1 -->
             <div class="form-group mb-3">
