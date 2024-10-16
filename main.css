@@ -168,7 +168,7 @@ small {
 }
 
 #calculator .calculator-body {
-    background-color: var(--bs-primary) !important;
+    /* background-color: var(--bs-tertiary-bg) !important; */
 }
 
 /* #calculator #kefirForm .btn {

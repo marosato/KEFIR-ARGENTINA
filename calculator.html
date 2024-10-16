@@ -99,17 +99,22 @@
             </a>
         </header>
 
-        <div class="calculator-body p-2 mb-4 rounded-3">
+        <div class="calculator-body p-4 text-bg-dark rounded-3">
             <div class="container-fluid py-5">
                 <h1 class="display-5 fw-bold"> Calculadora de Nódulos </h1>
-                <p class="col-md-8 fs-4"> </p>
+                <p class="col-md-10 fs-4"> 100 gramos de nódulos de kéfir de leche → fermentan 1 litro de leche. </p>
+                <div class="form-text mb-3">
+                    Advertencia: Se debe considerar que los nódulos de
+                    kéfir tienen una densidad variable, lo que hace que la equivalencia en términos de volumen
+                    no sea exacta. Sin embargo, podemos hacer una estimación razonable.
+                </div>
                 <!-- Form -->
-                <div class="container mt-5">
+                <div class="mt-4">
                     <form id="kefirForm">
                         <!-- Cantidad de Kéfir - Opción #1 -->
                         <div class="form-floating mb-4">
                             <input type="number" class="form-control" id="volume" required>
-                            <label for="volume"> Cantidad deseada de Kéfir (en litros): </label>
+                            <label for="volume"> Cantidad de nódulos (en gramos): </label>
                         </div>
                         <!-- Cantidad de Kéfir - Opción #2 -->
                         <!-- <div class="form-floating mb-3">
@@ -129,9 +134,40 @@
                         <div class="d-grid gap-2">
                             <button class="btn btn-outline-secondary btn-lg" type="submit"> Calcular </button>
                         </div>
+
                     </form>
                     <div id="results" class="mt-4"></div>
                 </div>
+
+                <script>
+                    document.getElementById('kefirForm').addEventListener('submit', function (event) {
+                        event.preventDefault(); // Prevenir el envío del formulario
+                
+                        const noduleAmount = parseInt(document.getElementById('volume').value); // Obtener la cantidad de nódulos
+                        const resultDiv = document.getElementById('results');
+                
+                        // Verificar si la cantidad de nódulos es válida
+                        if (isNaN(noduleAmount) || noduleAmount < 0) {
+                            resultDiv.innerHTML = "Por favor, ingrese una cantidad válida de nódulos.";
+                            return;
+                        }
+                
+                        // Calcular la cantidad de leche que se puede fermentar
+                        const litersFermented = noduleAmount / 100; // 100 gramos fermentan 1 litro de leche
+                
+                        resultDiv.innerHTML = `Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented.toFixed(2)} litros de leche.`;
+                
+                        // Modificar la función para devolver un número entero de vasos
+                        function calculateGlasses(liters) {
+                            const glassCapacity = 0.25; // Capacidad promedio de un vaso en litros
+                            const glasses = liters / glassCapacity;
+                            return Math.floor(glasses); // Redondear hacia abajo para obtener un entero
+                        }
+                
+                        // Modificar el código que muestra el resultado para incluir la cantidad de vasos
+                        resultDiv.innerHTML = `Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented.toFixed(2)} litros de leche, lo que equivale a aproximadamente ${calculateGlasses(litersFermented)} vasos.`;
+                    });
+                </script>
             </div>
         </div>
 
