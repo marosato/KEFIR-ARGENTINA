@@ -149,6 +149,12 @@ small {
         margin-top: 0;
     }
 
+    strong {
+        font-family: var(--bs-font-title) !important;
+        color: var(--bs-body-bg) !important;
+        font-weight: 900 !important;
+        /* font-style: italic; */
+    }
 
     footer .col,
     footer a,
