@@ -146,10 +146,6 @@ small {
         margin-top: 11px;
     }
 
-    #services .services-body {
-        margin-top: 0;
-    }
-
     footer .col,
     footer a,
     footer ul {
@@ -161,42 +157,6 @@ small {
         justify-content: center;
     }
 }
-
-
-:root {
-    --bs-calculator-fontsize: 1.2rem !important;
-}
-
-#calculator .calculator-body {
-    /* background-color: var(--bs-tertiary-bg) !important; */
-}
-
-/* #calculator #kefirForm .btn {
-    background-color: var(--bs-primary) !important;
-} */
-
-#calculator #kefirForm .form-floating input {
-    font-size: var(--bs-calculator-fontsize);
-}
-
-#calculator #kefirForm .form-floating label {
-    font-size: var(--bs-calculator-fontsize);
-    color: var(--bs-secondary-color);
-}
-
-#calculator #kefirForm .form-floating select {
-    font-size: var(--bs-calculator-fontsize);
-    color: var(--bs-tertiary-bg);
-}
-
-#calculator #kefirForm .form-floating .form-select,
-#calculator #kefirForm .form-floating input {
-    height: 80px;
-}
-
-
-
-
 
 /*  ---------------------------------------
     |             N A V B A R             |
@@ -250,6 +210,41 @@ nav .navbar-icon svg {
     color: var(--bs-secondary-color) !important;
     height: 30px;
     cursor: pointer;
+}
+
+/*  -----------------------------------------------
+    |             C A L C U L A T O R             |
+    -----------------------------------------------  */
+
+:root {
+    --bs-calculator-fontsize: 1.2rem !important;
+}
+
+#calculator .calculator-body {
+    /* background-color: var(--bs-tertiary-bg) !important; */
+}
+
+/* #calculator #kefirForm .btn {
+        background-color: var(--bs-primary) !important;
+    } */
+
+#calculator #kefirForm .form-floating input {
+    font-size: var(--bs-calculator-fontsize);
+}
+
+#calculator #kefirForm .form-floating label {
+    font-size: var(--bs-calculator-fontsize);
+    color: var(--bs-secondary-color);
+}
+
+#calculator #kefirForm .form-floating select {
+    font-size: var(--bs-calculator-fontsize);
+    color: var(--bs-tertiary-bg);
+}
+
+#calculator #kefirForm .form-floating .form-select,
+#calculator #kefirForm .form-floating input {
+    height: 80px;
 }
 
 /*  -----------------------------------
