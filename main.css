@@ -4,7 +4,7 @@
     /* --bs-primary: #A45C32 !important; */
     --bs-secondary-color: #F7E2C7 !important;
     --bs-tertiary-bg: #161616 !important;
-    --bs-font-title: '' !important;
+    --bs-font-title: 'Figtree' !important;
     /* --bs-font-paragraph: 'Poppins' !important; */
 }
 
@@ -42,7 +42,7 @@ h6,
 strong {
     font-family: var(--bs-font-title) !important;
     color: var(--bs-secondary-color) !important;
-    font-weight: 900 !important;
+    font-weight: 700 !important;
     /* font-style: italic; */
 }
 
@@ -394,31 +394,29 @@ nav .navbar-icon svg {
 
 
 
-.accordion {
+#FAQs .accordion {
     background-color: var(--);
     color: var(--accordion-text-color) !important;
 
 }
 
-.accordion-header {
+#FAQs .accordion-header {
     background-color: var(--bs-primary) !important;
     color: var(--);
 }
 
-.accordion-button {
+#FAQs .accordion-button {
     background-color: var(--bs-primary) !important;
     color: var(--bs-secondary-color) !important;
     font-size: large !important;
 }
 
-.accordion-button:hover {
+#FAQs .accordion-button:hover {
     background-color: var(--bs-body-bg) !important;
     /* color: var(--bs-secondary-color) !important; */
 }
 
-
-
-.accordion-collapse {
-    background-color: var(--bs-primary) !important;
+#FAQs .accordion-collapse {
+    background-color: var(--bs-body-bg) !important;
     color: var(--accordion-collapse-text-color);
 }
