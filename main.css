@@ -289,6 +289,10 @@ nav .navbar-icon svg {
     background-color: var(--bs-primary) !important;
 }
 
+#kefir-milk .card {
+    background-color: var(--bs-primary) !important;
+}
+
 /*  -------------------------------------
     |             T Y P E S             |
     -------------------------------------  */
