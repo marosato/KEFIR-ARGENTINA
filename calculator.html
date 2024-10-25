@@ -138,7 +138,7 @@
                             </select>
                             <label for="floatingSelect"> Seleccione el tipo de kéfir </label>
                         </div>
-
+                        <!-- Calcular -->
                         <div class="d-grid gap-2">
                             <button class="btn btn-outline-secondary btn-lg" type="submit"> Calcular </button>
                         </div>
@@ -148,7 +148,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- JAVASCRIPT -->
     <script>
@@ -166,10 +165,10 @@
                 return;
             }
 
-            const litersFermented = noduleAmount / 100;
+            const litersFermented = Math.floor(noduleAmount / 100); // Cambiado para que sea un número entero
             const glasses = calculateGlasses(litersFermented);
 
-            displayResult(`Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented.toFixed(2)} litros de leche, lo que equivale a aproximadamente ${glasses} vasos.`);
+            displayResult(`Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented} litros de leche, lo que equivale aproximadamente ${glasses} vasos.`);
         }
 
         function calculateGlasses(liters) {
