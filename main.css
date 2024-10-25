@@ -41,16 +41,17 @@ h5 * {
 h6,
 strong {
     font-family: var(--bs-font-title) !important;
-    color: var(--bs-secondary-color) !important;
+    color: var(--bs-secondary-color);
     font-weight: 700 !important;
     /* font-style: italic; */
 }
 
 p,
 ul,
+li,
 small {
     font-family: var(--bs-font-title) !important;
-    color: var(--bs-secondary-color) !important;
+    color: var(--bs-secondary-color);
     font-size: bolder !important;
 }
 
@@ -415,6 +416,16 @@ nav .navbar-icon svg {
 }
 
 #FAQs .accordion-collapse {
-    background-color: var(--bs-body-bg) !important;
-    color: var(--accordion-collapse-text-color);
+    background-color: var(--bs-secondary-color) !important;
+    color: var(--bs-body-bg);
+}
+
+#FAQs .accordion-collapse strong {
+    background-color: var(--bs-secondary-color) !important;
+    color: var(--bs-body-bg);
+}
+
+#FAQs .accordion-collapse li {
+    background-color: var(--bs-secondary-color) !important;
+    color: var(--bs-body-bg);
 }
