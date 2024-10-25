@@ -41,17 +41,15 @@ h5 * {
 h6,
 strong {
     font-family: var(--bs-font-title) !important;
-    color: var(--bs-secondary-color);
+    color: var(--bs-secondary-color) !important;
     font-weight: 700 !important;
     /* font-style: italic; */
 }
 
-p,
-ul,
-li,
+p, ul,
 small {
     font-family: var(--bs-font-title) !important;
-    color: var(--bs-secondary-color);
+    color: var(--bs-secondary-color) !important;
     font-size: bolder !important;
 }
 
@@ -292,7 +290,7 @@ nav .navbar-icon svg {
 }
 
 #kefir-milk .card {
-    background-color: var(--bs-primary) !important;
+        background-color: var(--bs-primary) !important;
 }
 
 #kefir-water .card {
@@ -384,19 +382,16 @@ nav .navbar-icon svg {
     opacity: 0.5;
 }
 
-
+/* ACCORDION */
 
 #FAQs .accordion-item {
     background-color: var(--bs-tertiary-bg);
     color: var(--bs-secondary-color);
 }
 
-
-
 #FAQs .accordion {
     background-color: var(--);
     color: var(--accordion-text-color) !important;
-
 }
 
 #FAQs .accordion-header {
@@ -416,16 +411,6 @@ nav .navbar-icon svg {
 }
 
 #FAQs .accordion-collapse {
-    background-color: var(--bs-secondary-color) !important;
-    color: var(--bs-body-bg);
-}
-
-#FAQs .accordion-collapse strong {
-    background-color: var(--bs-secondary-color) !important;
-    color: var(--bs-body-bg);
-}
-
-#FAQs .accordion-collapse li {
-    background-color: var(--bs-secondary-color) !important;
-    color: var(--bs-body-bg);
+    background-color: var(--bs-body-bg) !important;
+    color: var(--accordion-collapse-text-color);
 }
