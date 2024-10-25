@@ -6,6 +6,7 @@
     --bs-tertiary-bg: #161616 !important;
     --bs-font-title: 'Figtree' !important;
     /* --bs-font-paragraph: 'Poppins' !important; */
+    --bs-calculator-fontsize: 1.2rem !important;
 }
 
 * {
@@ -205,17 +206,14 @@ nav .navbar-icon svg {
     |             C A L C U L A T O R             |
     -----------------------------------------------  */
 
-:root {
-    --bs-calculator-fontsize: 1.2rem !important;
-}
-
-#calculator .calculator-body {
-    /* background-color: var(--bs-tertiary-bg) !important; */
-}
+/* #calculator .calculator-body {
+    background-color: var(--bs-primary) !important;
+} */
 
 /* #calculator #kefirForm .btn {
-        background-color: var(--bs-primary) !important;
-    } */
+    background-color: var(--bs-primary) !important;
+} */
+
 
 #calculator #kefirForm .form-floating input {
     font-size: var(--bs-calculator-fontsize);
