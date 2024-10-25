@@ -46,7 +46,8 @@ strong {
     /* font-style: italic; */
 }
 
-p, ul,
+p,
+ul,
 small {
     font-family: var(--bs-font-title) !important;
     color: var(--bs-secondary-color) !important;
@@ -77,7 +78,6 @@ small {
 .bi {
     color: var(--bs-secondary-color) !important;
 }
-
 
 /*  --------------------------------------
     |             SCROLL BAR             |
@@ -144,17 +144,6 @@ small {
 
     #home {
         margin-top: 11px;
-    }
-
-    footer .col,
-    footer a,
-    footer ul {
-        justify-content: center;
-    }
-
-    footer .col {
-        text-align: center;
-        justify-content: center;
     }
 }
 
@@ -289,15 +278,6 @@ nav .navbar-icon svg {
     background-color: var(--bs-primary) !important;
 }
 
-#kefir-milk .card {
-        background-color: var(--bs-primary) !important;
-}
-
-#kefir-water .card {
-    background-color: var(--bs-primary) !important;
-    border: none !important;
-}
-
 /*  -------------------------------------
     |             T Y P E S             |
     -------------------------------------  */
@@ -346,6 +326,10 @@ nav .navbar-icon svg {
     height: 400px;
 }
 
+#kefir-milk .card {
+    background-color: var(--bs-primary) !important;
+}
+
 /*  -------------------------------------------------
     |             K E F I R - W A T E R             |
     -------------------------------------------------  */
@@ -358,8 +342,10 @@ nav .navbar-icon svg {
     height: 400px;
 }
 
-
-
+#kefir-water .card {
+    background-color: var(--bs-primary) !important;
+    border: none !important;
+}
 
 /*  -----------------------------------
     |             F A Q s             |
@@ -417,4 +403,12 @@ nav .navbar-icon svg {
 #FAQs .accordion-collapse {
     background-color: var(--bs-body-bg) !important;
     color: var(--accordion-collapse-text-color);
+}
+
+/*  -----------------------------------
+    |             F A Q s             |
+    -----------------------------------  */
+
+footer {
+    background-color: var(--bs-primary);
 }
