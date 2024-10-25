@@ -47,6 +47,7 @@ strong {
 }
 
 p,
+ul,
 small {
     font-family: var(--bs-font-title) !important;
     color: var(--bs-secondary-color) !important;
@@ -290,7 +291,12 @@ nav .navbar-icon svg {
 }
 
 #kefir-milk .card {
-        background-color: var(--bs-primary) !important;
+    background-color: var(--bs-primary) !important;
+}
+
+#kefir-water .card {
+    background-color: var(--bs-primary) !important;
+    border: none !important;
 }
 
 /*  -------------------------------------
