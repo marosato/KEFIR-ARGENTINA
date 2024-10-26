@@ -55,16 +55,27 @@
 </head>
 
 <body>
-
-    <!-- NAV BAR -->
+    <!-- MENU -->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg py-3 mb-4 fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://marosato.github.io/KEFIR-ARGENTINA/"> KÉFIR ARGENTINA </a>
+                <a class="navbar-brand" href="https://marosato.github.io/KEFIR-ARGENTINA/" target="_blank"
+                    rel="noopener noreferrer"> KÉFIR ARGENTINA </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"
+                            style="display: none;">
+                            <path fill-rule="evenodd"
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -83,7 +94,7 @@
                     </ul>
                     <div class="d-flex" role="search">
                         <a class="btn btn-outline-success" href="calculator.html" role="button" target="_blank"
-                            rel="noopener noreferrer"> Calculadora de Kéfir </a>
+                            rel="noopener noreferrer"> Calculadora de Nódulos </a>
                     </div>
                     <!-- <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
@@ -119,25 +130,55 @@
         <div class="row row-cols-1 row-cols-lg-1 row-cols-sm-3 row-cols-md-4 g-4 g-lg-3 align-items-md-stretch">
             <div class="col-md-6">
                 <div class="card h-100 p-5">
-                    <h2> ¿A qué sabe? </h2>
-                    <p class="lead">
-                        El kéfir de leche sabe un poco parecido al yogur, pero es más líquido y tiene un sabor ácido.
-                        También puede tener pequeñas burbujas, como si estuviera un poquito carbonatado (como las
-                        bebidas gaseosas, pero muy leve).
-                    </p>
+                    <h2> </h2>
+                    <p class="lead"> </p>
                     <!-- <button class="btn btn-outline-light" type="button"> ... </button> -->
                 </div>
             </div>
-            <!-- <div class="col-md-6">
+            <div class="col-md-6">
                 <div class="card h-100 p-5">
-                    <h2> ... </h2>
-                    <p class="lead"> ... </p>
-                    <button class="btn btn-outline-secondary" type="button"> ... </button>
+                    <h2> Cuidados básicos </h2>
+                    <!-- <p class="lead"> </p> -->
+                    <ul class="lead mt-2">
+                        <li class="mb-2">
+                            La leche debe estar a temperatura ambiente antes de añadir el kéfir.
+                        </li>
+                        <li class="mb-2">
+                            La proporción aconsejada es entre 100-150 gramos de nódulos de kéfir
+                            <strong>por litro de leche</strong>.
+                            Lo normal es usar menos, según cuántas personas lo consuman. Con un vaso al día es
+                            suficiente.
+                            <a class="text-decoration-none" href="calculator.html" role="button" target="_blank"
+                                rel="noopener noreferrer"> Apretá acá </a> para ir a la calculadora de nódulos.
+                        </li>
+                        <li class="mb-2">
+                            Utiliza siempre un recipiente de cristal (o bien, de plástico) y un colador de plástico.
+                            Evita el metal y <strong>NUNCA</strong> uses aluminio.
+                        </li>
+                        <li class="mb-2">
+                            La leche entera, fresca, es la mejor opción, aunque también puedes usar leche semidescremada
+                            o descremada. Si no encuentras leche fresca, puedes usar leche pasteurizada (de la nevera).
+                        </li>
+                        <li class="mb-2">
+                            El kéfir se alimenta de la lactosa de la leche, por lo que no se debe usar leche sin lactosa
+                            ni vegetal.
+                        </li>
+
+                        <li class="mb-2">
+                            Cambia la leche cada 24 horas, pero se puede extender el tiempo hasta 36 horas, dependiendo
+                            de la temperatura.
+                        </li>
+                        <li class="mb-2">
+                            Tené en cuenta que el kéfir de más de 36 horas puede tener efectos laxantes y un sabor más
+                            ácido. Se puede saber que está listo cuando empieza a formarse suero (líquido claro) en la
+                            mezcla.
+                        </li>
+                    </ul>
+                    <!-- <button class="btn btn-outline-light" type="button"> ... </button> -->
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
-
 
     <!-- FAQs -->
     <section class="py-2" id="FAQs">
@@ -156,135 +197,139 @@
 
         <div class="accordion" id="accordionExample">
             <!-- FAQ #1 -->
-
-            <!-- FAQ #2 -->
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        ¿Qué leche debo usar para el kéfir de leche?
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿A qué sabe?
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <div class="px-3 pt-1 my-1 text-left">
-                            <h1 class="display-4 fw-bold text-body-emphasis"></h1>
-                            <!-- <div class="col-lg-6"> -->
-                            <div class="">
-                                <p class="lead mb-4">
-                                    Es recomendable usar <strong>leche entera</strong>, ya que tiene un contenido de
-                                    grasa adecuado que favorece el proceso de fermentación y le da una textura más
-                                    cremosa a la bebida.
-                                </p>
-                                <ul class="lead">
-                                    <li class="mt-3">
-                                        La opción más recomendada es la
-                                        <strong>Leche Entera Casanto de 1 litro</strong>,
-                                        que garantiza una buena calidad para la fermentación.
-                                    </li>
-                                    <li class="mt-3">
-                                        Como alternativa, también podés utilizar la
-                                        <strong>Leche Entera La Serenísima de 1 litro</strong>,
-                                        otra marca confiable y adecuada para preparar kéfir.
-                                    </li>
-                                </ul>
-                                <p class="lead mb-4">
-                                    Ambas leches son ideales para obtener un kéfir cremoso y lleno de probióticos.
-                                </p>
-                                <div class="d-grid gap-2 d-sm-block mb-5">
-                                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"
-                                        id="button-casanto">
-                                        Ver Leche "Casanto"
-                                    </button>
-                                    <img id="leche-casanto"
-                                        src="https://ardiaprod.vtexassets.com/arquivos/ids/326409-800-auto?v=638599594765300000&width=800&height=auto&aspect=true"
-                                        alt="Imagen de Leche Casanto" width="400" height="500" loading="lazy"
-                                        class="img-fluid border rounded-3 shadow-lg mb-2 mt-2" style="display: none;">
-
-                                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3"
-                                        id="button-serenisima">
-                                        Ver Leche "La Serenísima"
-                                    </button>
-                                    <img id="leche-serenisima"
-                                        src="https://jumboargentina.vtexassets.com/arquivos/ids/760452-800-auto?v=638049118130500000&width=800&height=auto&aspect=true"
-                                        alt="Imagen de Leche La Serenísima" width="400" height="500" loading="lazy"
-                                        class="img-fluid border rounded-3 shadow-lg mb-2 mt-2" style="display: none;">
-                                </div>
-                            </div>
-
-                            <!-- Botón para mostrar la imagen -->
-                            <script>
-                                document.getElementById("button-casanto").addEventListener("click", function () {
-                                    var lecheCasanto = document.getElementById("leche-casanto");
-                                    lecheCasanto.style.display = lecheCasanto.style.display === "block" ? "none" : "block";
-                                });
-
-                                document.getElementById("button-serenisima").addEventListener("click", function () {
-                                    var lecheSerenisima = document.getElementById("leche-serenisima");
-                                    lecheSerenisima.style.display = lecheSerenisima.style.display === "block" ? "none" : "block";
-                                });
-                            </script>
-
-                            <!-- <div class="overflow-hidden text-center">
-                                    <div class="container px-5">
-                                        <img src="https://ardiaprod.vtexassets.com/arquivos/ids/326409-800-auto?v=638599594765300000&width=800&height=auto&aspect=true"
-                                            class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
-                                            width="400" height="500" loading="lazy">
-                                        <img src="https://jumboargentina.vtexassets.com/arquivos/ids/760452-800-auto?v=638049118130500000&width=800&height=auto&aspect=true"
-                                            class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
-                                            width="400" height="500" loading="lazy">
-                                    </div>
-                                </div> -->
-                        </div>
+                        <p class="mt-2"> El gusto del kéfir de leche dependerá del tiempo de fermentación: </p>
+                        <ul class="mt-2">
+                            <li class="mb-2">
+                                Con <strong>12 horas</strong>, obtendrás una bebida más líquida pero con más propiedades laxantes.
+                            </li>
+                            <li class="mb-2">
+                                Con <strong>24 horas</strong>, la bebida se hará más espesa y tendrá un gusto <em>muy similar al yogur</em>.
+                            </li>
+                            <li class="mb-0">
+                                Con <strong>48 horas o más</strong>, resultará en una bebida mucho más <em>ácida y espesa</em> que las anteriores.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- FAQ #3 -->
-            <!-- <div class="accordion-item">
+            <!-- FAQ #2 -->
+            <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- FAQ #2 -->
-            <!-- <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cuántos gránulos de kéfir debo usar?
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-
+                        La proporción aconsejada es entre 100-150 gramos de nódulos
+                        <strong>por litro de leche</strong>.
+                        Lo normal es usar menos, según cuántas personas lo consuman. Con un vaso al día es
+                        suficiente.
+                        <!-- <p>
+                            ¿Te gustaría saber cuántos gramos de kéfir necesitas para empezar a fermentar?
+                            Ingresá la cantidad de leche que tenés y te diré la proporción exacta de gránulos para una fermentación ideal. 
+                        </p>
+                        <div class="d-grid gap-2 d-sm-block mb-2 mt-3">
+                            <a class="btn btn-primary px-4 me-sm-3 text-decoration-none" href="calculator.html"
+                                role="button" target="_blank" rel="noopener noreferrer"> Calculadora de Nódulos </a>
+                        </div> -->
                     </div>
                 </div>
-            </div> -->
+            </div>
+            <!-- FAQ #3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Cuál es la mejor leche para preparar kéfir?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="mb-4">
+                            Lo idel es la <strong>leche entera</strong>, ya que tiene un contenido de
+                            grasa adecuado que favorece el proceso de fermentación y le da una textura más
+                            cremosa a la bebida. También se puede usar leche semidescremada o descremada, pero esto
+                            puede cambiar un poco la textura. <strong>No uses leche sin lactosa ni leches
+                                vegetales</strong>, ya que el kéfir necesita la lactosa para alimentarse.
+                        </p>
+                        <ul class="">
+                            <li class="mt-3">
+                                La opción más recomendada es la
+                                <strong>Leche Entera Casanto de 1 litro</strong>,
+                                que garantiza una buena calidad para la fermentación.
+                            </li>
+                            <li class="mt-3">
+                                Como alternativa, también podés utilizar la
+                                <strong>Leche Entera La Serenísima de 1 litro</strong>,
+                                otra marca confiable y adecuada para preparar kéfir.
+                            </li>
+                        </ul>
+                        <p class="mb-4">
+                            Ambas leches son ideales para obtener un kéfir cremoso y lleno de probióticos.
+                        </p>
+                        <!-- BUTTONS -->
+                        <div class="d-grid gap-2 d-sm-block mb-2">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" id="button-casanto">
+                                Ver Leche "Casanto"
+                            </button>
+                            <img id="leche-casanto"
+                                src="https://ardiaprod.vtexassets.com/arquivos/ids/326409-800-auto?v=638599594765300000&width=800&height=auto&aspect=true"
+                                alt="Imagen de Leche Casanto" width="400" height="500" loading="lazy"
+                                class="img-fluid border rounded-3 shadow-lg mb-2 mt-2" style="display: none;">
 
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3" id="button-serenisima">
+                                Ver Leche "La Serenísima"
+                            </button>
+                            <img id="leche-serenisima"
+                                src="https://jumboargentina.vtexassets.com/arquivos/ids/760452-800-auto?v=638049118130500000&width=800&height=auto&aspect=true"
+                                alt="Imagen de Leche La Serenísima" width="400" height="500" loading="lazy"
+                                class="img-fluid border rounded-3 shadow-lg mb-2 mt-2" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- FAQ #4 -->
-            <!-- <div class="accordion-item">
+            <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-
+                        ¿Cada cuánto tiempo debo cambiar la leche del kéfir?
                     </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-
+                        Cambia la leche cada 24 horas, pero se puede extender el tiempo hasta 36 horas, dependiendo de
+                        la temperatura. <br>
+                        Cambia la leche cada 24 horas. Si hace calor, cambia cada 12 horas; si hace frío, cada 36 horas.
                     </div>
                 </div>
-            </div> -->
+            </div>
+            <!-- FAQ #5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Cómo sé que el kéfir está listo?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El kéfir estará listo <strong>cuando empieza a formarse un poco de suero (un líquido transparente)</strong> en la mezcla.
+                    </div>
+                </div>
+            </div>
         </div>
-
         <!-- <div class="row row-cols-1 row-cols-lg-2 row-cols-sm-3 row-cols-md-4 g-4 g-lg-3 align-items-md-stretch">
                 <div class="col-md-6">
                     <div class="h-100 p-5 text-bg-dark">
@@ -317,6 +362,20 @@
             </div> -->
         </div>
     </section>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        /* Botón para mostrar la imagen */
+        function toggleDisplay(buttonId, elementId) {
+            document.getElementById(buttonId).addEventListener("click", function () {
+                var element = document.getElementById(elementId);
+                element.style.display = element.style.display === "block" ? "none" : "block";
+            });
+        }
+        toggleDisplay("button-casanto", "leche-casanto");
+        toggleDisplay("button-serenisima", "leche-serenisima");
+    </script>
+
 
 </body>
 
