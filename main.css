@@ -152,51 +152,52 @@ small {
     |             N A V B A R             |
     ---------------------------------------  */
 
-nav .navbar-brand {
+.navbar {
+    background-color: var(--bs-body-bg);
+}
+
+.navbar-brand {
     color: var(--bs-secondary-color) !important;
-    font-family: var(--bs-font-title) !important;
     letter-spacing: 0.06em;
     font-weight: 500;
+    background-color: inherit;
+    transition: color 0.3s;
 }
 
-nav .navbar-brand:hover {
+.navbar-brand:hover {
     color: var(--bs-tertiary-bg) !important;
-    font-weight: 500;
 }
 
-nav,
-nav a,
-nav .nav-link {
-    background-color: var(--bs-body-bg) !important;
-    color: var(--bs-secondary-color) !important;
-    font-family: var(--bs-font-paragraph) !important;
+.navbar .navbar-nav .nav-link {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-secondary-color);
     font-weight: 500;
     font-size: large;
+    background-color: inherit;
+    transition: color 0.3s;
 }
 
-nav .nav-link:hover {
+.navbar .navbar-nav .nav-link:hover {
     color: var(--bs-tertiary-bg) !important;
-    font-family: var(--bs-font-paragraph) !important;
     font-weight: 500;
 }
 
-nav .nav-link svg {
+.navbar .navbar-nav .nav-link svg {
     background-color: var(--bs-primary) !important;
     color: var(--bs-secondary-color) !important;
-    font-family: var(--bs-font-paragraph) !important;
     width: 24px;
     height: 24px;
 }
 
 /* NAVBAR TOGGLER */
 
-nav .navbar-toggler {
+.navbar .navbar-toggler {
     color: var(--bs-secondary-color) !important;
     border-color: var(--bs-secondary-color);
     border: none;
 }
 
-nav .navbar-icon svg {
+.navbar .navbar-icon svg {
     color: var(--bs-secondary-color) !important;
     height: 30px;
     cursor: pointer;
@@ -206,13 +207,13 @@ nav .navbar-icon svg {
     |             C A L C U L A T O R             |
     -----------------------------------------------  */
 
-    
 #calculator .calculator-body {
     background-color: var(--bs-primary) !important;
 }
 
-#calculator .calculator-body h1, #calculator .calculator-body p {
-    font-family: var(--bs-font-paragraph) !important;
+#calculator .calculator-body h1,
+#calculator .calculator-body p {
+    font-family: var(--bs-font-title) !important;
 }
 
 /* #calculator #kefirForm .btn {
