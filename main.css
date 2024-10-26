@@ -39,6 +39,7 @@ h5 * {
     text-transform: uppercase;
 }
 
+a,
 h6,
 strong {
     font-family: var(--bs-font-title) !important;
@@ -46,6 +47,7 @@ strong {
     font-weight: 700 !important;
     /* font-style: italic; */
 }
+
 
 p,
 ul,
