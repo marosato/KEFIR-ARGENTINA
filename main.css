@@ -286,8 +286,7 @@ small {
     |             A B O U T             |
     -------------------------------------  */
 
-.about-body,
-.about-card {
+.about-body, .card {
     background-color: var(--bs-primary) !important;
 }
 
