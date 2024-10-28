@@ -148,6 +148,10 @@ small {
     #home {
         margin-top: 11px;
     }
+
+    #footer a .footer-credits {
+        margin-top: 22px;
+    }
 }
 
 /*  ---------------------------------------
