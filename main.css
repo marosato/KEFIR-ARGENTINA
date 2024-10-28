@@ -418,6 +418,13 @@ small {
     |             F A Q s             |
     -----------------------------------  */
 
-footer {
+#footer {
     background-color: var(--bs-primary);
+}
+
+#footer a .footer-credits {
+    color: #161616;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
