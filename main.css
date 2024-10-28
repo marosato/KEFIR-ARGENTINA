@@ -195,6 +195,20 @@ small {
     height: 24px;
 }
 
+.navbar .navbar-collapse .navbar-calculator .btn {
+    background-color: var(--bs-secondary-color) !important;
+    color: var(--bs-primary);
+    font-weight: 900;
+    justify-content: center;
+}
+
+/* .navbar .navbar-collapse .navbar-calculator .btn:hover {
+    background-color: var(--bs-primary) !important;
+    font-weight: 900;
+    justify-content: center;
+} */
+
+
 /* NAVBAR TOGGLER */
 
 .navbar .navbar-toggler {
@@ -286,7 +300,8 @@ small {
     |             A B O U T             |
     -------------------------------------  */
 
-.about-body, .card {
+.about-body,
+.card {
     background-color: var(--bs-primary) !important;
 }
 
@@ -427,6 +442,6 @@ small {
 
 #footer a .footer-credits {
     font-style: italic;
-
-    text-decoration: underline;
+    /* text-transform: uppercase;
+    text-decoration: underline; */
 }
