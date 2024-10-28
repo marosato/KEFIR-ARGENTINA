@@ -222,46 +222,6 @@ small {
     cursor: pointer;
 }
 
-/*  -----------------------------------------------
-    |             C A L C U L A T O R             |
-    -----------------------------------------------  */
-
-#calculator .calculator-body {
-    background-color: var(--bs-primary) !important;
-}
-
-#calculator .calculator-body h1,
-#calculator .calculator-body p {
-    font-family: var(--bs-font-title) !important;
-}
-
-/* #calculator #kefirForm .btn {
-    background-color: var(--bs-primary) !important;
-} */
-
-#calculator #kefirForm .form-floating input {
-    font-size: var(--bs-calculator-fontsize);
-    font-family: var(--bs-font-paragraph) !important;
-}
-
-#calculator #kefirForm .form-floating label {
-    font-size: var(--bs-calculator-fontsize);
-    color: var(--bs-secondary-color);
-    font-family: var(--bs-font-paragraph) !important;
-}
-
-#calculator #kefirForm .form-floating select {
-    font-size: var(--bs-calculator-fontsize);
-    color: var(--bs-tertiary-bg);
-    font-family: var(--bs-font-paragraph) !important;
-}
-
-#calculator #kefirForm .form-floating .form-select,
-#calculator #kefirForm .form-floating input {
-    height: 80px;
-    font-family: var(--bs-font-paragraph) !important;
-}
-
 /*  -----------------------------------
     |             H O M E             |
     -----------------------------------  */
@@ -371,6 +331,46 @@ small {
 #kefir-water .card {
     background-color: var(--bs-primary) !important;
     border: none !important;
+}
+
+/*  -----------------------------------------------
+    |             C A L C U L A T O R             |
+    -----------------------------------------------  */
+
+#calculator .calculator-body {
+    background-color: var(--bs-primary) !important;
+}
+
+#calculator .calculator-body h1,
+#calculator .calculator-body p {
+    font-family: var(--bs-font-title) !important;
+}
+
+/* #calculator #kefirForm .btn {
+        background-color: var(--bs-primary) !important;
+    } */
+
+#calculator #kefirForm .form-floating input {
+    font-size: var(--bs-calculator-fontsize);
+    font-family: var(--bs-font-paragraph) !important;
+}
+
+#calculator #kefirForm .form-floating label {
+    font-size: var(--bs-calculator-fontsize);
+    color: var(--bs-secondary-color);
+    font-family: var(--bs-font-paragraph) !important;
+}
+
+#calculator #kefirForm .form-floating select {
+    font-size: var(--bs-calculator-fontsize);
+    color: var(--bs-tertiary-bg);
+    font-family: var(--bs-font-paragraph) !important;
+}
+
+#calculator #kefirForm .form-floating .form-select,
+#calculator #kefirForm .form-floating input {
+    height: 80px;
+    font-family: var(--bs-font-paragraph) !important;
 }
 
 /*  -----------------------------------
