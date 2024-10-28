@@ -428,5 +428,6 @@ small {
 
 #footer a .footer-credits {
     font-style: italic;
-    text-transform: uppercase;
+
+    text-decoration: underline;
 }
