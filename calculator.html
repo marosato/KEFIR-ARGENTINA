@@ -152,7 +152,8 @@
                         </div> -->
                         <!-- Calcular -->
                         <div class="d-grid gap-2">
-                            <button class="btn btn-outline-secondary btn-lg" type="submit"> Click aquí para mostrar resultados </button>
+                            <button class="btn btn-outline-secondary btn-lg" type="submit"> Click aquí para mostrar
+                                resultados </button>
                         </div>
                     </form>
                     <div id="results" class="mt-4"></div>
@@ -164,40 +165,68 @@
     <!-- JAVASCRIPT -->
     <script>
         // CALCULATOR
-        document.getElementById('kefirForm').addEventListener('submit', handleFormSubmit);
+        // document.getElementById('kefirForm').addEventListener('submit', handleFormSubmit);
 
-        function handleFormSubmit(event) {
+        // function handleFormSubmit(event) {
+        //     event.preventDefault();
+
+        //     const volumeInput = document.getElementById('volume');
+        //     const noduleAmount = parseInt(volumeInput.value);
+
+        //     if (isNaN(noduleAmount) || noduleAmount < 0) {
+        //         displayError('Por favor, ingrese una cantidad válida de nódulos.');
+        //         return;
+        //     }
+
+        //     const litersFermented = Math.floor(noduleAmount / 100); // Cambiado para que sea un número entero
+        //     const glasses = calculateGlasses(litersFermented);
+
+        //     displayResult(`Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented} litros de leche, lo que equivale aproximadamente ${glasses} vasos.`);
+        // }
+
+        // function calculateGlasses(liters) {
+        //     const glassCapacity = 0.25;
+        //     return Math.floor(liters / glassCapacity);
+        // }
+
+        // function displayError(message) {
+        //     const resultDiv = document.getElementById('results');
+        //     resultDiv.innerHTML = message;
+        // }
+
+        // function displayResult(message) {
+        //     const resultDiv = document.getElementById('results');
+        //     resultDiv.innerHTML = `RESULTADO: ${message}`;
+        // }
+
+        document.getElementById("kefirForm").addEventListener("submit", function (event) {
             event.preventDefault();
 
-            const volumeInput = document.getElementById('volume');
-            const noduleAmount = parseInt(volumeInput.value);
+            const volumenGramos = parseFloat(document.getElementById("volume").value);
 
-            if (isNaN(noduleAmount) || noduleAmount < 0) {
-                displayError('Por favor, ingrese una cantidad válida de nódulos.');
-                return;
-            }
+            // Conversiones
+            const litros = volumenGramos / 1000; // Convertir gramos a litros
+            const mililitros = litros * 1000; // Convertir litros a mililitros
+            const vasos = Math.round(litros * 4); // Calcular la cantidad de vasos (250 ml cada uno) y redondear al entero
 
-            const litersFermented = Math.floor(noduleAmount / 100); // Cambiado para que sea un número entero
-            const glasses = calculateGlasses(litersFermented);
+            // Mostrar resultados
+            document.getElementById("results").innerHTML = `
+            <h3 class="mb-3"> Resultados: </h3>
+            <p>
+                <strong> Cantidad en litros: </strong>
+                ${litros.toFixed(2)} litros (${mililitros} ml)
+            </p>
+            <p>
+                <strong> Cantidad de vasos: </strong>
+                ${vasos} vaso(s) (aproximadamente)
+            </p>
+            `;
+        });
 
-            displayResult(`Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented} litros de leche, lo que equivale aproximadamente ${glasses} vasos.`);
-        }
-
-        function calculateGlasses(liters) {
-            const glassCapacity = 0.25;
-            return Math.floor(liters / glassCapacity);
-        }
-
-        function displayError(message) {
-            const resultDiv = document.getElementById('results');
-            resultDiv.innerHTML = message;
-        }
-
-        function displayResult(message) {
-            const resultDiv = document.getElementById('results');
-            resultDiv.innerHTML = `RESULTADO: ${message}`;
-        }
     </script>
+
+
+
 </body>
 
 </html>
