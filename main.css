@@ -372,7 +372,7 @@ small {
 
 #calculator .calculator-body h1,
 #calculator .calculator-body p {
-    font-family: var(--bs-font-title) !important;
+    text-align: center;
 }
 
 /* #calculator #kefirForm .btn {
@@ -383,7 +383,6 @@ small {
 #calculator .calculator-form input {
     color: var(--bs-secondary-color);
     /* height: 120px; */
-    
 }
 
 #calculator .calculator-form label {
