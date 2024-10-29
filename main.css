@@ -380,12 +380,12 @@ small {
     } */
 
 
-#calculator .kefirForm input {
+#calculator .kefirForm .form-labe {
     color: var(--bs-secondary-color) !important;
     /* height: 120px; */
 }
 
-#calculator .kefirForm label {
+#calculator .kefirForm .form-control {
     color: var(--bs-secondary-color) !important;
     text-wrap: wrap;
     font-weight: 500;
