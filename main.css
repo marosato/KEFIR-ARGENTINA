@@ -310,7 +310,7 @@ small {
 #types .warning {
     font-style: italic !important;
     font-weight: 600 !important;
-    
+
 }
 
 /*  -----------------------------------------------
@@ -329,12 +329,15 @@ small {
     background-color: var(--bs-primary) !important;
 }
 
-#kefir-milk .warning {
-    font-style: italic !important;
-    font-weight: 700 !important;
+#kefir-milk .kefir-milk-card h2,
+#kefir-milk .kefir-milk-card p {
     text-align: center;
 }
 
+#kefir-milk .warning {
+    font-style: italic !important;
+    font-weight: 700 !important;
+}
 
 /*  -------------------------------------------------
     |             K E F I R - W A T E R             |
@@ -352,10 +355,14 @@ small {
     background-color: var(--bs-primary) !important;
 }
 
+#kefir-milk .kefir-water-card h2,
+#kefir-milk .kefir-water-card p {
+    text-align: center;
+}
+
 #kefir-water .warning {
     font-style: italic !important;
     font-weight: 700 !important;
-    text-align: center;
 }
 
 /*  -----------------------------------------------
