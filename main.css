@@ -382,7 +382,6 @@ small {
 
 #calculator .calculator-form input {
     color: var(--bs-secondary-color);
-    height: 120px;
 }
 
 #calculator .calculator-form label {
