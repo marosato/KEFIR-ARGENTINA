@@ -331,7 +331,7 @@ small {
 
 #kefir-milk .kefir-milk-card h2,
 #kefir-milk .kefir-milk-card p {
-    text-align: center;
+    text-align: center !important;
 }
 
 #kefir-milk .warning {
@@ -357,7 +357,7 @@ small {
 
 #kefir-water .kefir-water-card h2,
 #kefir-water .kefir-water-card p {
-    text-align: center;
+    text-align: center !important;
 }
 
 #kefir-water .warning {
