@@ -447,7 +447,9 @@ small {
     |             F O O T E R             |
     ---------------------------------------  */
 
-
+#footer {
+    background-color: var(--bs-primary);
+}
 
 #footer a .footer-credits {
     font-style: italic;
