@@ -49,6 +49,7 @@ strong {
 
 p,
 ul,
+ol,
 small {
     font-family: var(--bs-font-title) !important;
     color: var(--bs-secondary-color) !important;
@@ -78,6 +79,13 @@ small {
 
 .bi {
     color: var(--bs-secondary-color) !important;
+}
+
+.warning {
+    font-style: italic !important;
+    font-weight: 700 !important;
+    font-size: 2.9vh !important;
+    text-align: center;
 }
 
 /*  --------------------------------------
@@ -304,10 +312,10 @@ small {
     opacity: 0.3;
 }
 
-#types .info {
+/* #types .warning {
     font-style: italic !important;
     font-weight: 600 !important;
-}
+} */
 
 /*  -----------------------------------------------
     |             K E F I R - M I L K             |
