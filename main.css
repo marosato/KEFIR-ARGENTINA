@@ -380,26 +380,24 @@ small {
     } */
 
 #calculator #kefirForm .form-floating input {
-    font-family: var(--bs-font-paragraph) !important;
     font-size: 1.3rem !important;
-    height: 80px
+    height: 80px;
 }
 
 #calculator #kefirForm .form-floating label {
     color: var(--bs-secondary-color);
-    font-family: var(--bs-font-paragraph) !important;
+    font-size: 1rem !important;
+    text-wrap: wrap;
 }
 
 #calculator #kefirForm .form-floating select {
-    font-size: var(--bs-calculator-fontsize);
     color: var(--bs-tertiary-bg);
-    font-family: var(--bs-font-paragraph) !important;
+    font-size: var(--bs-calculator-fontsize);
 }
 
 #calculator #kefirForm .form-floating .form-select,
 #calculator #kefirForm .form-floating input {
     height: 80px;
-    font-family: var(--bs-font-paragraph) !important;
 }
 
 /*  -----------------------------------
