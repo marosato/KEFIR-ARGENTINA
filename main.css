@@ -5,7 +5,6 @@
     --bs-secondary-color: #F7E2C7 !important;
     --bs-tertiary-bg: #161616 !important;
     --bs-font-title: 'Figtree' !important;
-    /* --bs-font-paragraph: 'Poppins' !important; */
     --bs-calculator-fontsize: 1.2rem !important;
 }
 
@@ -47,7 +46,6 @@ strong {
     font-weight: 700 !important;
     /* font-style: italic; */
 }
-
 
 p,
 ul,
@@ -259,8 +257,7 @@ small {
     |             A B O U T             |
     -------------------------------------  */
 
-.about-body,
-.card {
+#about .about-body, .about-card {
     background-color: var(--bs-primary) !important;
 }
 
@@ -330,7 +327,6 @@ small {
 
 #kefir-water .card {
     background-color: var(--bs-primary) !important;
-    border: none !important;
 }
 
 /*  -----------------------------------------------
@@ -377,6 +373,14 @@ small {
     |             F A Q s             |
     -----------------------------------  */
 
+/* #FAQs .FAQs-body {
+    background-image: url('https://www.evalandgo.com/wp-content/uploads/2024/03/pexels-photo-5428836.jpeg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+} */
+
 .FAQs-body {
     position: relative;
 }
@@ -400,20 +404,22 @@ small {
 
 /* ACCORDION */
 
-#FAQs .accordion-item {
-    background-color: var(--bs-tertiary-bg);
+#FAQs .accordion-button {
+    background-color: var(--bs-primary);
+    color: var(--bs-secondary-color);
+    font-size: large;
+}
+
+#FAQs .accordion-button:hover {
+    background-color: var(--bs-body-bg);
+}
+
+#FAQs .accordion-collapse {
+    background-color: var(--bs-body-bg);
     color: var(--bs-secondary-color);
 }
 
-#FAQs .accordion {
-    background-color: var(--);
-    color: var(--accordion-text-color) !important;
-}
-
-#FAQs .accordion-header {
-    background-color: var(--bs-primary) !important;
-    color: var(--);
-}
+/*
 
 #FAQs .accordion-button {
     background-color: var(--bs-primary) !important;
@@ -423,21 +429,19 @@ small {
 
 #FAQs .accordion-button:hover {
     background-color: var(--bs-body-bg) !important;
-    /* color: var(--bs-secondary-color) !important; */
+    color: var(--bs-secondary-color) !important;
 }
 
 #FAQs .accordion-collapse {
     background-color: var(--bs-body-bg) !important;
     color: var(--accordion-collapse-text-color);
-}
+} */
 
-/*  -----------------------------------
-    |             F A Q s             |
-    -----------------------------------  */
+/*  ---------------------------------------
+    |             F O O T E R             |
+    ---------------------------------------  */
 
-#footer {
-    background-color: var(--bs-primary);
-}
+
 
 #footer a .footer-credits {
     font-style: italic;

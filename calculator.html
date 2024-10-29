@@ -105,40 +105,27 @@
     </header>
 
     <!-- CALCULATOR -->
-    <section class="container py-4 mt-4" id="calculator">
-        <!-- <header class="pb-3 mb-4 border-bottom">
-            <a href="#" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-                <span class="fs-4"> Calculadora de Nódulos </span>
-            </a>
-        </header> -->
-        <div class="calculator-body p-4 mt-4">
-            <div class="container-fluid py-4 text-center">
+    <div class="container-xl py-4 mt-5" id="calculator">
+        <section class="calculator-body p-4 mb-4 text-center">
+            <div class="container-fluid py-5 ">
                 <h1 class="display-5 fw-bold"> Calculadora de Nódulos </h1>
-                <p class="col-md-0 fs-5">
+                <p class="col-md-0 fs-4">
                     Tené en cuenta que la cantidad de nódulos de kéfir <strong>puede variar</strong>
                     según el tipo de kéfir y la densidad de los nódulos.
                 </p>
-                <!-- <div class="form-text col-md-10 mb-3">
-                    Es importante tener en cuenta que la cantidad de nódulos de kéfir <strong>puede variar</strong>
-                    según el tipo de kéfir y la densidad de los nódulos.
-                </div> -->
-                <!-- <div class="form-text col-md-9 mb-3">
-                    Es importante tener en cuenta que, como la densidad de los nódulos de kéfir puede variar, la
-                    equivalencia en volumen no es del todo exacta, pero aún así es posible hacer una estimación
-                    aproximada.
-                </div> -->
                 <!-- Form -->
                 <div class="mt-4">
                     <form id="kefirForm">
-                        <!-- Cantidad de Kéfir - Opción #1 -->
                         <div class="form-floating mb-4">
-                            <input type="number" class="form-control" id="volume" required>
-                            <label for="volume"> Cantidad de nódulos (en gramos): </label>
+                            <input type="number" class="form-control" id="floatingNumber" placeholder=""
+                                style="height: 80px">
+                            <label for="floatingNumber"> Ingrese aquí la cantidad de nódulos (en gramos): </label>
                         </div>
+
                         <!-- Cantidad de Kéfir - Opción #2 -->
                         <!-- <div class="form-floating mb-4">
-                            <input type="number" class="form-control" id="floatingInput">
-                            <label for="floatingInput"> Cantidad de nódulos (en gramos): </label>
+                            <input type="number" class="form-control" id="volume" required>
+                            <label for="volume"> Cantidad de nódulos (en gramos): </label>
                         </div> -->
 
                         <!-- Tipo de Kéfir -->
@@ -159,8 +146,12 @@
                     <div id="results" class="mt-4"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <footer class="pt-3 mt-4 text-body-secondary border-top">
+            © 2024
+        </footer>
+    </div>
 
     <!-- JAVASCRIPT -->
     <script>
@@ -202,7 +193,7 @@
         document.getElementById("kefirForm").addEventListener("submit", function (event) {
             event.preventDefault();
 
-            const volumenGramos = parseFloat(document.getElementById("volume").value);
+            const volumenGramos = parseFloat(document.getElementById("floatingNumber").value);
 
             // Conversiones
             const litros = volumenGramos / 1000; // Convertir gramos a litros
@@ -221,8 +212,6 @@
         });
 
     </script>
-
-
 
 </body>
 
