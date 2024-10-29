@@ -372,7 +372,7 @@ small {
 
 #calculator .calculator-body h1,
 #calculator .calculator-body p {
-    text-align: center;
+    text-align: center !important;
 }
 
 /* #calculator #kefirForm .btn {
@@ -381,12 +381,12 @@ small {
 
 
 #calculator .kefirForm input {
-    color: var(--bs-secondary-color);
+    color: var(--bs-secondary-color) !important;
     /* height: 120px; */
 }
 
 #calculator .kefirForm label {
-    color: var(--bs-secondary-color);
+    color: var(--bs-secondary-color) !important;
     text-wrap: wrap;
     font-weight: 500;
 }
