@@ -5,7 +5,7 @@
     --bs-secondary-color: #F7E2C7 !important;
     --bs-tertiary-bg: #161616 !important;
     --bs-font-title: 'Figtree' !important;
-    --bs-calculator-fontsize: 1.2rem !important;
+    /* --bs-calculator-fontsize: 1.2rem !important; */
 }
 
 * {
@@ -280,7 +280,7 @@ small {
     background-repeat: no-repeat;
 } */
 
-.types-card {
+#types .types-card {
     background-color: var(--bs-primary) !important;
 }
 
@@ -308,7 +308,6 @@ small {
 #types .warning {
     font-style: italic !important;
     font-weight: 600 !important;
-
 }
 
 /*  -----------------------------------------------
@@ -381,12 +380,12 @@ small {
     } */
 
 #calculator #kefirForm .form-floating input {
-    font-size: var(--bs-calculator-fontsize);
     font-family: var(--bs-font-paragraph) !important;
+    font-size: 1.3rem !important;
+    height: 80px
 }
 
 #calculator #kefirForm .form-floating label {
-    font-size: var(--bs-calculator-fontsize);
     color: var(--bs-secondary-color);
     font-family: var(--bs-font-paragraph) !important;
 }
