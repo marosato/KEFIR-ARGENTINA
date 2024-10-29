@@ -389,6 +389,7 @@ small {
 #calculator .calculator-form label {
     color: var(--bs-secondary-color);
     text-wrap: wrap;
+    font-weight: 500;
 }
 
 #calculator #kefirForm .form-floating input {
