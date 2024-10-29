@@ -305,8 +305,8 @@ small {
 }
 
 #types .info {
-    font-style: italic;
-    font-weight: 600;
+    font-style: italic !important;
+    font-weight: 600 !important;
 }
 
 /*  -----------------------------------------------
