@@ -355,8 +355,8 @@ small {
     background-color: var(--bs-primary) !important;
 }
 
-#kefir-milk .kefir-water-card h2,
-#kefir-milk .kefir-water-card p {
+#kefir-water .kefir-water-card h2,
+#kefir-water .kefir-water-card p {
     text-align: center;
 }
 
