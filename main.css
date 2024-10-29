@@ -253,6 +253,13 @@ small {
     opacity: 0.2;
 }
 
+.disclaimer {
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+
+}
+
 /*  -------------------------------------
     |             A B O U T             |
     -------------------------------------  */
