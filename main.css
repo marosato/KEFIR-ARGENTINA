@@ -380,6 +380,20 @@ small {
     } */
 
 
+
+
+#calculator #kefirForm .form-floating label {
+    color: var(--bs-secondary-color);
+
+    text-wrap: wrap;
+}
+
+#calculator #kefirForm .form-floating select {
+    color: var(--bs-tertiary-bg);
+    font-size: var(--bs-calculator-fontsize);
+}
+
+
 /*  -----------------------------------
     |             F A Q s             |
     -----------------------------------  */
