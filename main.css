@@ -263,7 +263,8 @@ small {
     |             A B O U T             |
     -------------------------------------  */
 
-#about .about-body, .about-card {
+#about .about-body,
+.about-card {
     background-color: var(--bs-primary) !important;
 }
 
@@ -305,6 +306,7 @@ small {
 
 #types .info {
     font-style: italic;
+    font-weight: 600;
 }
 
 /*  -----------------------------------------------
