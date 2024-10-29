@@ -303,6 +303,10 @@ small {
     opacity: 0.3;
 }
 
+#types .info {
+    font-style: italic;
+}
+
 /*  -----------------------------------------------
     |             K E F I R - M I L K             |
     -----------------------------------------------  */
@@ -334,6 +338,8 @@ small {
 #kefir-water .card {
     background-color: var(--bs-primary) !important;
 }
+
+
 
 /*  -----------------------------------------------
     |             C A L C U L A T O R             |
