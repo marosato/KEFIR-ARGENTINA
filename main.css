@@ -379,6 +379,18 @@ small {
         background-color: var(--bs-primary) !important;
     } */
 
+
+#calculator .calculator-form input {
+    font-size: 1.3rem !important;
+    height: 60px;
+}
+
+#calculator .calculator-form label {
+    color: var(--bs-secondary-color);
+    font-size: 1rem !important;
+    text-wrap: wrap;
+}
+
 #calculator #kefirForm .form-floating input {
     font-size: 1.3rem !important;
     height: 80px;
