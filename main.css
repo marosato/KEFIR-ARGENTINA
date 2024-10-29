@@ -393,7 +393,7 @@ small {
 
 #calculator #kefirForm .form-floating input {
     font-size: 1.3rem !important;
-    height: 110px;
+    height: 90px !important;
 }
 
 #calculator #kefirForm .form-floating label {
