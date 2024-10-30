@@ -318,8 +318,11 @@ small {
 }
 
 #types .warning {
+    font-family: var(--bs-font-title) !important;
     font-style: italic !important;
-    font-weight: 500 !important;
+    /* font-weight: 500 !important; */
+    text-align: center;
+
 }
 
 /*  -----------------------------------------------
@@ -373,6 +376,13 @@ small {
     font-style: italic !important;
     font-weight: 700 !important;
 }
+
+
+#kefir-water .kefir-water-card .kefir-water-background {
+
+}
+
+
 
 /*  -----------------------------------------------
     |             C A L C U L A T O R             |
