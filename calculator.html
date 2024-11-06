@@ -58,8 +58,7 @@
     <!-- MENU -->
     <nav class="navbar navbar-expand-lg fixed-top py-3" aria-label="Thirteenth navbar example">
         <div class="container-fluid">
-            <a class="navbar-brand col-lg-4 me-0" href="https://marosato.github.io/KEFIR-ARGENTINA/" target="_blank"
-                rel="noopener noreferrer"> KÉFIR ARGENTINA </a>
+            <a class="navbar-brand col-lg-4 me-0" href="https://marosato.github.io/KEFIR-ARGENTINA/"> KÉFIR ARGENTINA </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11"
                 aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -84,11 +83,11 @@
                     según el tipo de kéfir y la densidad de los nódulos.
                 </p>
 
-                <form class="kefirForm">
+                <form class="kefirForm" id="kefirForm">
                     <div class="mb-3 mt-4">
                         <label for="kefir-text" class="form-label"> Cantidad de nódulos (en gramos): </label>
                         <input type="number" class="form-control form-control-lg" id="kefir-grams" aria-describedby="kefirHelp">
-                        <div id="kefirHelp" class="form-text mb-2">
+                        <div class="form-text mb-2" id="kefirHelp">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-arrow-up-short" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -102,6 +101,12 @@
                             </svg>
                         </div>
                     </div>
+                    <div class="d-grid gap-2 mt-2">
+                        <button type="submit" class="btn btn-outline-secondary btn-lg">
+                            Click aquí para mostrar resultados
+                        </button>
+                    </div>
+                    <div id="results" class="mt-4"></div>
                 </form>
 
                 <!-- Form -->
@@ -193,7 +198,7 @@
 
             // Mostrar resultados
             document.getElementById("results").innerHTML = `
-            <h3 class="mb-3 mt-4"> Resultados: </h3>
+            <h3 class="mb-3 mt-4 text-center"> Resultados: </h3>
             <p>
                 Con <strong> ${volumenGramos} gramos </strong> de nódulos, se pueden fermentar
                 <strong> ${litros.toFixed(2)} litros </strong> de leche (<strong>${mililitros}ml</strong>),

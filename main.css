@@ -221,11 +221,12 @@ small {
     border: none;
 }
 
-.navbar .navbar-toggler-icon svg {
-    color: var(--bs-secondary-color) !important;
+.navbar .navbar-toggler .navbar-toggler-icon {
+    color: yellow !important;
     height: 30px;
     cursor: pointer;
 }
+
 
 /*  -----------------------------------
     |             H O M E             |
