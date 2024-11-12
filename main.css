@@ -164,6 +164,10 @@ small {
         padding-top: 6vh !important;
     }
 
+    #calculator .form-text {
+        text-align: center;
+    }
+
     #footer a .footer-credits {
         margin-top: 22px;
     }
