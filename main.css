@@ -212,7 +212,6 @@ small {
     justify-content: center;
 } */
 
-
 /* NAVBAR TOGGLER */
 
 .navbar .navbar-toggler {
@@ -226,7 +225,6 @@ small {
     height: 30px;
     cursor: pointer;
 }
-
 
 /*  -----------------------------------
     |             H O M E             |
@@ -507,11 +505,11 @@ small {
     |             F O O T E R             |
     ---------------------------------------  */
 
-#footer {
+footer {
     background-color: var(--bs-primary);
 }
 
-#footer a .footer-credits {
+footer a .footer-credits {
     font-style: italic;
     /* text-transform: uppercase; */
     /* text-decoration: underline; */
