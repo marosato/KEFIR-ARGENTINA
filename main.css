@@ -154,9 +154,10 @@ small {
         padding: 0vh !important;
     }
 
-    #kefir-water .kefir-water-card {
-        background-color: var(--bs-primary) !important;
+    #kefir-water .kefir-water-card,
+    #kefir-milk .kefir-milk-card {
         padding: 4vh !important;
+        padding-top: 6vh !important;
     }
 
     #footer a .footer-credits {
@@ -382,9 +383,7 @@ small {
 }
 
 
-#kefir-water .kefir-water-card .kefir-water-background {
-
-}
+#kefir-water .kefir-water-card .kefir-water-background {}
 
 
 
