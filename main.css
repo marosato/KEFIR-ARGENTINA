@@ -165,7 +165,7 @@ small {
     }
 
     #calculator .form-text {
-        text-align: center;
+        text-align: center !important;
     }
 
     #footer a .footer-credits {
