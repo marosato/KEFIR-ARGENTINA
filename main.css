@@ -154,6 +154,10 @@ small {
         padding: 0vh !important;
     }
 
+    #about .about-card {
+        padding: 4vh !important;
+    }
+
     #kefir-water .kefir-water-card,
     #kefir-milk .kefir-milk-card {
         padding: 4vh !important;
