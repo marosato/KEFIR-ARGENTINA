@@ -165,7 +165,7 @@
 
     <!-- JAVASCRIPT -->
     <script>
-        // CALCULATOR
+
         // document.getElementById('kefirForm').addEventListener('submit', handleFormSubmit);
 
         // function handleFormSubmit(event) {
@@ -201,7 +201,7 @@
         // }
 
         document.getElementById('kefirForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Evita que el formulario se envíe y recargue la página
+            event.preventDefault();
 
             const grams = parseFloat(document.getElementById('kefir-grams').value);
             const liters = grams / 100; // 100 gramos = 1 litro
