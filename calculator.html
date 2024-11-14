@@ -203,17 +203,25 @@
         document.getElementById('kefirForm').addEventListener('submit', function (event) {
             event.preventDefault();
 
-            const grams = parseFloat(document.getElementById('kefir-grams').value);
-            const liters = grams / 100; // 100 gramos = 1 litro
-            const glasses = liters * 4; // Aproximadamente 4 vasos de 500ml por litro
+            const gramsInput = document.getElementById('kefir-grams').value;
+            const grams = parseFloat(gramsInput);
+
+            // Validación de datos
+            if (isNaN(grams) || grams <= 0) {
+                alert('Por favor, ingrese una cantidad válida de nódulos. No puede quedar el campo vacío.');
+                return;
+            }
+
+            const liters = grams / 100;
+            const glasses = liters * 4;
 
             // Muestra los resultados
             document.getElementById('results').innerHTML = `
             <h3 class="mb-3 mt-4 text-center"> Resultados: </h3>
             <p>
-                Con <strong> ${grams} gramos</strong>, se pueden fermentar
-                <strong> ${liters.toFixed(2)} litros</strong>,
-                lo que equivale <strong> ${glasses.toFixed(0)} vasos</strong>.
+                Con <strong>${grams} gramos</strong> de gránulos de kéfir, se pueden fermentar
+                <strong>${liters.toFixed(2)} litros</strong>,
+                lo que equivale a <strong>${glasses.toFixed(0)} vasos</strong>.
             </p>
             `;
         });
