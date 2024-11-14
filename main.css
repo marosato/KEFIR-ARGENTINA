@@ -158,7 +158,7 @@ small {
         padding: 0vh !important;
     }
 
-    #about .about-card {
+    #about .about-body, #about .about-card {
         padding: 4vh !important;
     }
 
