@@ -144,6 +144,10 @@ small {
         padding: 10px;
     }
 
+    nav .navbar-nav {
+        margin-top: 1vh;
+    }
+
     #home {
         margin-top: 11vh;
     }
