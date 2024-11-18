@@ -205,7 +205,7 @@ small {
 #meeting-points .list-group-item {
     display: block;
     margin: 0 auto;
-    background-color: var(--bs-body-bg);
+    background-color: var(--bs-primary);
     color: var(--bs-secondary-color);
 }
 
