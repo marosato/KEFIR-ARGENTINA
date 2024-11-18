@@ -210,7 +210,7 @@ small {
 }
 
 #meeting-points .list-group-item:hover {
-    background-color: var(--bs-primary);
+    background-color: var(--bs-body-bg);
 }
 
 /*  ---------------------------------------
