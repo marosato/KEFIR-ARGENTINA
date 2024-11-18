@@ -1,6 +1,7 @@
 // MEETING POINTS
 
 // Lista de Lugares
+
 const locations = [
     // Caseros
     { name: "Plaza Principal de Caseros", address: "Av. San Martín & Bonifacini, Caseros", postalCode: "1678" },
@@ -30,7 +31,7 @@ const locations = [
     { name: "Plaza Altube", address: "Alfredo Bufano & G. Payró, Sáenz Peña", postalCode: "1674" },
     { name: "Plaza Emilio Mitre", address: "Juan B. Justo & Av. América, Sáenz Peña", postalCode: "1674" },
     { name: "Plaza América", address: "Av. América & De La Victoria, Sáenz Peña", postalCode: "1674" },
-    { name: "Plaza Sáenz Peña", address: "Int. Alvear & Sáenz Peña, Sáenz Peña", postalCode: "1674" },
+    { name: "Plaza Sáenz Peña", address: "Int. Al vear & Sáenz Peña, Sáenz Peña", postalCode: "1674" },
 
     // Santos Lugares
     { name: "Plaza de los Artilleros", address: "Rodríguez Peña & Alianza, Santos Lugares", postalCode: "1676" },
@@ -45,112 +46,63 @@ const locations = [
     { name: "Plaza San Cayetano", address: "San Cayetano & Rawson, Villa Bosch", postalCode: "1682" }
 ];
 
-// Función para mostrar la lista de lugares
-function displayLocations(filteredLocations) {
-    const locationList = document.getElementById('locationList');
-    locationList.innerHTML = '';
-    filteredLocations.forEach(location => {
-        const li = document.createElement('li');
-        li.className = 'list-group-item';
-        li.textContent = `${location.name} - ${location.address} (Código postal: ${location.postalCode})`;
-        locationList.appendChild(li);
-    });
-    if (filteredLocations.length > 0) {
-        locationList.style.display = 'block';
+function validateForm() {
+    const locationField = document.getElementById("inputLocation");
+    const typeField = document.getElementById("inputType");
+
+    // Validar el primer campo: Localidad/Código Postal
+    if (locationField.value.trim() === "") {
+        locationField.setCustomValidity("Introduce tu localidad o código postal para buscar puntos cercanos.");
+        locationField.reportValidity();
+        return false;
     } else {
-        locationList.style.display = 'none';
+        locationField.setCustomValidity("");
     }
+
+    // Validar Tipo de Kéfir
+    if (typeField.value === "") {
+        typeField.setCustomValidity("Debes elegir un tipo de kéfir.");
+        typeField.reportValidity();
+        return false;
+    } else {
+        typeField.setCustomValidity("");
+    }
+
+    searchLocations();
+    return false;
 }
 
-const locationList = document.getElementById('locationList');
-const errorMessage = document.getElementById('errorMessage');
-const inputLocation = document.getElementById('inputLocation');
+function searchLocations() {
+    const locationField = document.getElementById("inputLocation").value.trim().toLowerCase();
+    const locationsUl = document.getElementById("locationsUl");
+    const locationList = document.getElementById("locationList");
 
-function displayLocations(filteredLocations) {
-    locationList.innerHTML = '';
-    filteredLocations.forEach(location => {
-        const li = document.createElement('li');
-        li.className = 'list-group-item';
-        li.textContent = `${location.name} - ${location.address} (Código postal: ${location.postalCode})`;
-        locationList.appendChild(li);
+    locationsUl.innerHTML = "";
+
+    // Filtrar lugares por localidad, dirección o código postal
+    const filteredLocations = locations.filter(location => {
+        const locationName = location.name.toLowerCase();
+        const locationAddress = location.address.toLowerCase();
+        const locationPostalCode = location.postalCode.toLowerCase();
+
+        // Búsqueda insensible a mayúsculas/minúsculas
+        const nameMatch = locationName.includes(locationField);
+        const addressMatch = locationAddress.includes(locationField);
+        const postalCodeMatch = locationPostalCode.includes(locationField);
+
+        return nameMatch || addressMatch || postalCodeMatch;
     });
-    locationList.style.display = filteredLocations.length > 0 ? 'block' : 'none';
-}
 
-function handleSearch(event) {
-    event.preventDefault();
-    const searchTerm = inputLocation.value.toLowerCase();
-    const filteredLocations = locations.filter(location =>
-        location.name.toLowerCase().includes(searchTerm) ||
-        location.address.toLowerCase().includes(searchTerm) ||
-        location.postalCode.includes(searchTerm)
-    );
-    displayLocations(filteredLocations);
-}
-
-function validateForm(event) {
-    event.preventDefault();
-
-    const inputLocation = document.getElementById('inputLocation').value.trim();
-    const inputType = document.getElementById('inputType').value;
-    const errorMessage = document.getElementById('errorMessage');
-    const locationList = document.getElementById('locationList');
-
-    errorMessage.style.display = 'none';
-    locationList.style.display = 'none';
-    locationList.innerHTML = '';
-
-    if (!inputLocation) {
-        errorMessage.innerText = 'Por favor, ingresa una localidad o código postal.';
-        errorMessage.style.display = 'block';
-        return false;
+    if (filteredLocations.length > 0) {
+        filteredLocations.forEach(location => {
+            const li = document.createElement("li");
+            li.classList.add("list-group-item");
+            li.textContent = `${location.name} - ${location.address} (C.P. ${location.postalCode})`;
+            locationsUl.appendChild(li);
+        });
+        locationList.style.display = "block";
+    } else {
+        locationList.style.display = "none";
+        alert("No se encontraron puntos cercanos.");
     }
-
-    if (inputType === "Elegir...") {
-        errorMessage.innerText = 'Por favor, selecciona un tipo de kéfir.';
-        errorMessage.style.display = 'block';
-        return false;
-    }
-
-    handleSearch(event);
-    return true;
 }
-
-
-document.getElementById('searchForm').addEventListener('submit', validateForm);
-
-
-// const places = [
-//     { name: "Plaza Central", location: "Calle 1, Ciudad A", postalCode: "12345" },
-//     { name: "Centro Cultural", location: "Avenida 2, Ciudad B", postalCode: "23456" },
-//     { name: "Mercado Municipal", location: "Calle 3, Ciudad A", postalCode: "12345" },
-//     { name: "Plaza de la Música", location: "Calle 4, Ciudad C", postalCode: "34567" },
-//     { name: "Centro de Salud", location: "Avenida 5, Ciudad B", postalCode: "23456" },
-//     { name: "Mercado de Agricultores", location: "Calle 6, Ciudad A", postalCode: "12345" },
-// ];
-
-// const searchInput = document.getElementById('search');
-// const placeList = document.getElementById('place-list');
-
-// function displayPlaces(filteredPlaces) {
-//     placeList.innerHTML = '';
-//     filteredPlaces.forEach(place => {
-//         const placeItem = document.createElement('div');
-//         placeItem.classList.add('place-item');
-//         placeItem.innerText = `${place.name} - ${place.location} (Código Postal: ${place.postalCode})`;
-//         placeList.appendChild(placeItem);
-//     });
-// }
-
-// function filterPlaces() {
-//     const query = searchInput.value.toLowerCase();
-//     const filteredPlaces = places.filter(place => 
-//         place.location.toLowerCase().includes(query) || 
-//         place.postalCode.includes(query)
-//     );
-//     displayPlaces(filteredPlaces);
-// }
-
-// searchInput.addEventListener('input', filterPlaces);
-
-// displayPlaces(places);
