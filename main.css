@@ -186,6 +186,10 @@ small {
         text-align: center !important;
     }
 
+    #meeting-points .meeting-body {
+        padding: 4vh !important;
+    }
+
     #footer a .footer-credits {
         margin-top: 22px;
     }
