@@ -1,7 +1,3 @@
-
-
-
-
 // KEFIR WATER
 
 // Lista de Lugares
@@ -81,27 +77,19 @@ function handleSearch(event) {
 
 function validateForm() {
     const input = document.getElementById('searchInput').value;
-    
     // if (input.trim() === "") {
     //     alert("¡ERROR! El campo no puede estar vacío.");
     //     return false;
     // }
-
     const regex = /^[a-zA-Z0-9]+$/;
-
     if (!regex.test(input)) {
         alert("¡ERROR! Solo se aceptan letras y números.");
         return false;
     }
-
     return true;
 }
 
 document.getElementById('searchForm').addEventListener('submit', handleSearch);
-
-
-
-
 
 
 // const places = [

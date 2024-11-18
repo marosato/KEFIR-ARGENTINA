@@ -193,7 +193,7 @@ small {
 
 
 
-#meeting-points {
+#meeting-points .meeting-body {
     background-color: var(--bs-primary) !important;
 }
 

@@ -174,8 +174,46 @@
         </div>
     </section>
 
+    <!-- MEETING POINTS -->
+    <section class="container-xxl py-2" id="meeting-points">
+        <div class="meeting-body p-5 mb-4">
+            <div class="container-fluid py-3 text-center">
+                <h1 class="display-5 fw-bold"> Lugares para entregar o recibir kéfir </h1>
+                <p class="col-md-0 fs-5">
+                    ¿Querés saber cuáles son los puntos de encuentro? Completá el formulario.
+                </p>
+                <!-- <button class="btn btn-primary btn-lg" type="button"> ... </button> -->
+            </div>
+            <!-- FORM -->
+            <form class="container" id="searchForm" onsubmit="return validateForm()">
+                <div>
+                    <label for="inputLocation" class="form-label"> Localidad/Código postal </label>
+                    <input type="text" class="form-control form-control-lg" id="searchInput" required>
+                    <div id="errorMessage" class="text-danger mt-2" style="display: none;"></div>
+                </div>
+                <div id="locationHelpBlock" class="form-text my-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
+                    </svg>
+                    Escriba aquí para buscar
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
+                    </svg>
+                </div>
+                <button class="btn btn-outline-secondary btn-lg w-100 py-2 my-2" type="submit">
+                    Realizar búsqueda
+                </button>
+            </form>
+            <ul class="list-group mt-4" id="locationList" style="display: none;"></ul>
+        </div>
+    </section>
+
     <!-- FAQs -->
-    <section class="container-xxl py-4" id="FAQs">
+    <section class="container-xxl py-2" id="FAQs">
         <div class="FAQs-body p-5 mb-4">
             <div class="FAQs-background">
                 <img src="https://www.evalandgo.com/wp-content/uploads/2024/03/pexels-photo-5428836.jpeg"
@@ -202,11 +240,13 @@
                         <p class="mt-2"> El gusto del kéfir de leche dependerá del tiempo de fermentación: </p>
                         <ul class="mt-2">
                             <li class="mb-2">
-                                Con <strong>12 horas</strong>, obtendrás una bebida más líquida pero con más propiedades
+                                Con <strong>12 horas</strong>, obtendrás una bebida más líquida pero con más
+                                propiedades
                                 laxantes.
                             </li>
                             <li class="mb-2">
-                                Con <strong>24 horas</strong>, la bebida se hará más espesa y tendrá un gusto <em>muy
+                                Con <strong>24 horas</strong>, la bebida se hará más espesa y tendrá un gusto
+                                <em>muy
                                     similar al yogur</em>.
                             </li>
                             <li class="mb-0">
@@ -253,7 +293,8 @@
                     <div class="accordion-body">
                         Lo mejor es la <strong class="text-uppercase">leche entera</strong>, ya que tiene un
                         contenido de grasa adecuado que favorece el proceso de fermentación y le da una textura más
-                        cremosa a la bebida. También se puede usar leche semidescremada o descremada, pero esto puede
+                        cremosa a la bebida. También se puede usar leche semidescremada o descremada, pero esto
+                        puede
                         <em>cambiar un poco la textura</em>.
                         <!-- <ol class="">
                             <li class="mt-2">
@@ -326,7 +367,8 @@
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>No</strong>, el kéfir se alimenta de la lactosa de la leche, por lo que no funcionará
+                        <strong>No</strong>, el kéfir se alimenta de la lactosa de la leche, por lo que no
+                        funcionará
                         bien con ninguna de estas.
                     </div>
                 </div>
@@ -341,7 +383,8 @@
                 </h2>
                 <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Cambia la leche <strong>cada 24 horas</strong>, pero se puede extender el tiempo hasta 36 horas,
+                        Cambia la leche <strong>cada 24 horas</strong>, pero se puede extender el tiempo hasta 36
+                        horas,
                         dependiendo de la temperatura.
                     </div>
                 </div>
@@ -356,7 +399,8 @@
                 </h2>
                 <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Sabrás que el kéfir está listo <strong>cuando empieza a formarse un poco de suero (un líquido
+                        Sabrás que el kéfir está listo <strong>cuando empieza a formarse un poco de suero (un
+                            líquido
                             transparente)</strong> en la mezcla.
                     </div>
                 </div>
@@ -374,15 +418,18 @@
                         Si tu kéfir se vuelve demasiado ácido para tu gusto, podés:
                         <ul class="mt-3">
                             <li class="mb-3">
-                                <strong>Reducir el tiempo de fermentación:</strong> Dejalo fermentar por menos tiempo
+                                <strong>Reducir el tiempo de fermentación:</strong> Dejalo fermentar por menos
+                                tiempo
                                 (12 horas en lugar de 24), ya que cuanto más tiempo fermente, más ácido se vuelve.
                             </li>
                             <li class="mb-3">
-                                <strong>Agregar ingredientes dulces:</strong> podés mezclarlo con frutas, miel o jarabe
+                                <strong>Agregar ingredientes dulces:</strong> podés mezclarlo con frutas, miel o
+                                jarabe
                                 para equilibrar la acidez.
                             </li>
                             <li class="mb-3">
-                                <strong>Diluirlo:</strong> Si es muy fuerte, podés agregar un poco de agua o leche (en
+                                <strong>Diluirlo:</strong> Si es muy fuerte, podés agregar un poco de agua o leche
+                                (en
                                 el caso del kéfir de leche) para suavizar el sabor.
                             </li>
                         </ul>
@@ -396,43 +443,6 @@
                 Creado por: Rosato, Macarena Ayelén.
             </a>
         </footer> -->
-    </section>
-
-    <!-- MEETING POINTS -->
-    <section class="container-xxl py-4" id="meeting-points">
-        <div class="p-2 mb-3">
-            <div class="container-fluid py-1">
-                <h1 class="display-5 fw-bold text-center"> Lugares para entregar o recibir kéfir </h1>
-                <p class="col-md-0 fs-5 text-center">
-                    ¿Querés saber cuáles son los puntos de encuentro? Completá el formulario.
-                </p>
-                <!-- FORM -->
-                <form class="container mt-4" id="searchForm" onsubmit="return validateForm()">
-                    <div>
-                        <label for="inputLocation" class="form-label"> Localidad/Código postal </label>
-                        <input type="text" class="form-control form-control-lg" id="searchInput" required>
-                        <div id="errorMessage" class="text-danger mt-2" style="display: none;"></div>
-                        <!-- Mensaje de error -->
-                    </div>
-                    <div id="locationHelpBlock" class="form-text my-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-up-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
-                        </svg>
-                        Escriba aquí para buscar
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-up-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
-                        </svg>
-                    </div>
-                    <button class="btn btn-outline-secondary btn-lg w-100 py-2 my-2" type="submit"> Realizar búsqueda
-                    </button>
-                </form>
-                <ul class="list-group mt-4" id="locationList" style="display: none;"></ul>
-            </div>
-        </div>
     </section>
 
     <!-- FOOTER -->
