@@ -1,13 +1,30 @@
 // MEETING POINTS
 
 // Lista de Lugares
-
 const locations = [
+    // Villa Bosch
+    { name: "Plaza Murialdo", address: "Gaucho Cruz & Martín Fierro, Villa Bosch", postalCode: "1682" },
+    { name: "Plaza Padre Elizalde", address: "Liniers & Bosch, Villa Bosch", postalCode: "1682" },
+    { name: "Plaza José Ingenieros", address: "Las Heras & José Ingenieros, Villa Bosch", postalCode: "1682" },
+    { name: "Plaza San Cayetano", address: "San Cayetano & Rawson, Villa Bosch", postalCode: "1682" },
+
     // Caseros
     { name: "Plaza Principal de Caseros", address: "Av. San Martín & Bonifacini, Caseros", postalCode: "1678" },
     { name: "Plaza de la Unidad Nacional", address: "Lisandro de la Torre & Moreno, Caseros", postalCode: "1678" },
     { name: "Plaza Mitre", address: "Tres de Febrero & Alberdi, Caseros", postalCode: "1678" },
     { name: "Plaza del Pueblo", address: "Av. Libertador & Güemes, Caseros", postalCode: "1678" },
+
+    // Santos Lugares
+    { name: "Plaza de los Artilleros", address: "Rodríguez Peña & Alianza, Santos Lugares", postalCode: "1676" },
+    { name: "Plaza Giorello", address: "Av. La Plata & Av. Rodríguez Peña, Santos Lugares", postalCode: "1676" },
+    { name: "Plaza San Martín", address: "Gral. Paz & San Martín, Santos Lugares", postalCode: "1676" },
+    { name: "Plaza Troilo", address: "Freyre & Ocampo, Santos Lugares", postalCode: "1676" },
+
+    // Martín Coronado
+    { name: "Plaza Giorello", address: "Marconi & Sgto. Cabral, Martín Coronado", postalCode: "1682" },
+    { name: "Plaza Villa Herminia", address: "Pueyrredón & Vélez Sarsfield, Martín Coronado", postalCode: "1682" },
+    { name: "Plaza Alem", address: "J. A. Roca & Alem, Martín Coronado", postalCode: "1682" },
+    { name: "Plaza Libertad", address: "Libertad & Corrientes, Martín Coronado", postalCode: "1682" },
 
     // Ciudadela
     { name: "Plaza El Resero", address: "Av. Rivadavia & Gral. Paz, Ciudadela", postalCode: "1702" },
@@ -21,29 +38,11 @@ const locations = [
     { name: "Plaza Vecinos Unidos", address: "Camacuá & Río de Janeiro, Loma Hermosa", postalCode: "1657" },
     { name: "Plaza Belgrano", address: "Belgrano & Maipú, Loma Hermosa", postalCode: "1657" },
 
-    // Martín Coronado
-    { name: "Plaza Giorello", address: "Marconi & Sgto. Cabral, Martín Coronado", postalCode: "1682" },
-    { name: "Plaza Villa Herminia", address: "Pueyrredón & Vélez Sarsfield, Martín Coronado", postalCode: "1682" },
-    { name: "Plaza Alem", address: "J. A. Roca & Alem, Martín Coronado", postalCode: "1682" },
-    { name: "Plaza Libertad", address: "Libertad & Corrientes, Martín Coronado", postalCode: "1682" },
-
     // Sáenz Peña
     { name: "Plaza Altube", address: "Alfredo Bufano & G. Payró, Sáenz Peña", postalCode: "1674" },
     { name: "Plaza Emilio Mitre", address: "Juan B. Justo & Av. América, Sáenz Peña", postalCode: "1674" },
     { name: "Plaza América", address: "Av. América & De La Victoria, Sáenz Peña", postalCode: "1674" },
     { name: "Plaza Sáenz Peña", address: "Int. Al vear & Sáenz Peña, Sáenz Peña", postalCode: "1674" },
-
-    // Santos Lugares
-    { name: "Plaza de los Artilleros", address: "Rodríguez Peña & Alianza, Santos Lugares", postalCode: "1676" },
-    { name: "Plaza Giorello", address: "Av. La Plata & Av. Rodríguez Peña, Santos Lugares", postalCode: "1676" },
-    { name: "Plaza San Martín", address: "Gral. Paz & San Martín, Santos Lugares", postalCode: "1676" },
-    { name: "Plaza Troilo", address: "Freyre & Ocampo, Santos Lugares", postalCode: "1676" },
-
-    // Villa Bosch
-    { name: "Plaza Murialdo", address: "Gaucho Cruz & Martín Fierro, Villa Bosch", postalCode: "1682" },
-    { name: "Plaza Padre Elizalde", address: "Liniers & Bosch, Villa Bosch", postalCode: "1682" },
-    { name: "Plaza José Ingenieros", address: "Las Heras & José Ingenieros, Villa Bosch", postalCode: "1682" },
-    { name: "Plaza San Cayetano", address: "San Cayetano & Rawson, Villa Bosch", postalCode: "1682" }
 ];
 
 function validateForm() {

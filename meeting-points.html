@@ -83,7 +83,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto text-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#FAQs"> Preguntas Frecuentes </a>
+                        <a class="nav-link" href="#"></a>
                     </li>
                 </ul>
                 <div class="navbar-buttons d-grid gap-2 d-md-flex justify-content-md-end">
@@ -97,38 +97,36 @@
     <!-- MEETING POINTS -->
     <section class="container-xxl py-4 mt-5" id="meeting-points">
         <div class="meeting-body p-4 mb-1">
-            <div class="container-fluid py-4 text-center">
+            <div class="container-fluid py-2 text-center">
                 <h1 class="display-5 fw-bold"> Lugares para entregar o recibir kéfir </h1>
-                <p class="col-md-0 fs-6 mt-3">
+                <p class="col-md-0 fs-5 mt-3">
                     ¿Querés saber cuáles son los puntos de encuentro? Buscá por tu zona completando en el campo de
                     abajo.
                 </p>
             </div>
             <!-- FORM -->
-            <form class="container row g-3" id="searchForm" onsubmit="return validateForm()">
-                <div class="col-md-6">
-                    <label for="inputLocation" class="form-label">Localidad/Código postal</label>
-                    <input type="text" class="form-control" id="inputLocation" placeholder="Buscar..." required>
+            <form class="row g-3 justify-content-center" id="searchForm" onsubmit="return validateForm()">
+                <div class="col-md-5">
+                    <label for="inputLocation" class="form-label form-label-lg">Localidad/Código postal</label>
+                    <input type="text" class="form-control form-control-lg" id="inputLocation" placeholder="Buscar..." required>
                 </div>
                 <div class="col-md-4">
                     <label for="inputType" class="form-label">Tipo de kéfir</label>
-                    <select id="inputType" class="form-select" required>
+                    <select id="inputType" class="form-select form-select-lg" required>
                         <option value="" disabled selected>Elegir...</option>
                         <option value="Kéfir de Agua">Kéfir de Agua</option>
                         <option value="Kéfir de Leche">Kéfir de Leche</option>
                     </select>
                 </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-outline-secondary w-100 py-2 my-3">Realizar búsqueda</button>
+                <div class="col-md-9">
+                    <button type="submit" class="btn btn-outline-secondary btn-lg w-100 py-2 my-3">Realizar búsqueda</button>
                 </div>
             </form>
             
-            <div id="locationList" style="display:none;">
-                <h2>Puntos cercanos:</h2>
+            <div class="m-3" id="locationList" style="display: none;">
+                <h2 class="text-center"> Puntos cercanos: </h2>
                 <ul class="list-group" id="locationsUl"></ul>
             </div>
-
-            <!-- <ul class="list-group mt-3" id="locationList" style="display: none;"></ul> -->
         </div>
     </section>
 
