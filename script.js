@@ -83,17 +83,25 @@ function validateForm() {
     locationList.style.display = 'none';
     locationList.innerHTML = '';
 
-    const puntosDeEncuentro = [];
+    // Filtrar los lugares basados en la búsqueda
+    const filteredLocations = locations.filter(location =>
+        location.name.toLowerCase().includes(searchInput.toLowerCase()) ||
+        location.address.toLowerCase().includes(searchInput.toLowerCase()) ||
+        location.postalCode.includes(searchInput)
+    );
 
-    if (puntosDeEncuentro.length === 0) {
+    // Comprobar si hay puntos de encuentro
+    if (filteredLocations.length === 0) {
         errorMessage.innerText = 'No existen puntos de encuentro por esta zona.';
         errorMessage.style.display = 'block';
         return false;
     }
-    puntosDeEncuentro.forEach(punto => {
+
+    // Mostrar los puntos de encuentro encontrados
+    filteredLocations.forEach(location => {
         const listItem = document.createElement('li');
         listItem.className = 'list-group-item';
-        listItem.textContent = punto;
+        listItem.textContent = `${location.name} - ${location.address} (Código postal: ${location.postalCode})`;
         locationList.appendChild(listItem);
     });
 
