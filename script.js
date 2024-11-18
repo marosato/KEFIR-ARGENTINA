@@ -79,7 +79,30 @@ function handleSearch(event) {
     displayLocations(filteredLocations);
 }
 
+function validateForm() {
+    const input = document.getElementById('searchInput').value;
+    
+    if (input.trim() === "") {
+        alert("El campo no puede estar vacío.");
+        return false;
+    }
+
+    const regex = /^[a-zA-Z0-9]+$/;
+
+    if (!regex.test(input)) {
+        alert("Solo se aceptan letras y números. Por favor, reingrese.");
+        return false;
+    }
+
+    return true;
+}
+
+
 document.getElementById('searchForm').addEventListener('submit', handleSearch);
+
+
+
+
 
 
 // const places = [
