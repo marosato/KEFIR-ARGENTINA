@@ -82,10 +82,10 @@ function handleSearch(event) {
 function validateForm() {
     const input = document.getElementById('searchInput').value;
     
-    if (input.trim() === "") {
-        alert("¡ERROR! El campo no puede estar vacío.");
-        return false;
-    }
+    // if (input.trim() === "") {
+    //     alert("¡ERROR! El campo no puede estar vacío.");
+    //     return false;
+    // }
 
     const regex = /^[a-zA-Z0-9]+$/;
 
