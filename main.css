@@ -191,34 +191,6 @@ small {
     }
 }
 
-
-
-#meeting-points .meeting-body {
-    background-color: var(--bs-primary) !important;
-}
-
-#meeting-points #searchForm {
-    margin: 0 auto;
-    color: var(--bs-secondary-color) !important;
-}
-
-#meeting-points #searchForm input {
-    color: var(--bs-secondary-color) !important;
-}
-
-#meeting-points .list-group-item {
-    display: block;
-    margin: 0 auto;
-    background-color: var(--bs-primary);
-    color: var(--bs-secondary-color);
-}
-
-#meeting-points .list-group-item:hover {
-    background-color: var(--bs-body-bg);
-}
-
-
-
 /*  ---------------------------------------
     |             N A V B A R             |
     ---------------------------------------  */
@@ -416,8 +388,6 @@ nav .navbar-buttons .btn:hover {
     font-weight: 700 !important;
 }
 
-
-
 /*  -----------------------------------------------
     |             C A L C U L A T O R             |
     -----------------------------------------------  */
@@ -467,6 +437,34 @@ nav .navbar-buttons .btn:hover {
 #calculator .kefirForm .form-floating input {
     height: 80px;
 } */
+
+/*  -------------------------------------------------------
+    |             M E E T I N G - P O I N T S             |
+    -------------------------------------------------------  */
+
+#meeting-points .meeting-body {
+    background-color: var(--bs-primary) !important;
+}
+
+#meeting-points #searchForm {
+    margin: 0 auto;
+    color: var(--bs-secondary-color) !important;
+}
+
+#meeting-points #searchForm input {
+    color: var(--bs-secondary-color) !important;
+}
+
+#meeting-points .list-group-item {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--bs-primary);
+    color: var(--bs-secondary-color);
+}
+
+#meeting-points .list-group-item:hover {
+    background-color: var(--bs-body-bg);
+}
 
 /*  -----------------------------------
     |             F A Q s             |
