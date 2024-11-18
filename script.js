@@ -81,20 +81,37 @@ function handleSearch(event) {
 
 function validateForm() {
     const input = document.getElementById('searchInput').value;
-    
+    const errorMessage = document.getElementById('errorMessage');
+    const locationList = document.getElementById('locationList');
+
+    // Limpiar el mensaje de error al comenzar la validación
+    errorMessage.style.display = 'none';
+    errorMessage.textContent = '';
+
+    // Comprobar si el campo está vacío
     if (input.trim() === "") {
-        alert("El campo no puede estar vacío.");
-        return false;
+        errorMessage.textContent = "El campo no puede estar vacío.";
+        errorMessage.style.display = 'block'; // Mostrar el mensaje
+        locationList.style.display = 'none'; // Asegurarse de que la lista esté oculta
+        return false; // Evita el envío del formulario
     }
 
+    // Expresión regular para letras y números
     const regex = /^[a-zA-Z0-9]+$/;
 
+    // Comprobar si el input solo contiene letras y números
     if (!regex.test(input)) {
-        alert("Solo se aceptan letras y números. Por favor, reingrese.");
-        return false;
+        errorMessage.textContent = "Solo se aceptan letras y números.";
+        errorMessage.style.display = 'block'; // Mostrar el mensaje
+        locationList.style.display = 'none'; // Asegurarse de que la lista esté oculta
+        return false; // Evita el envío del formulario
     }
 
-    return true;
+    // Si la validación es exitosa, mostrar la lista de resultados
+    locationList.style.display = 'block'; // Mostrar la lista de resultados
+    // Aquí puedes agregar la lógica para llenar la lista con los resultados
+
+    return true; // Permite el envío del formulario
 }
 
 
@@ -129,8 +146,8 @@ document.getElementById('searchForm').addEventListener('submit', handleSearch);
 
 // function filterPlaces() {
 //     const query = searchInput.value.toLowerCase();
-//     const filteredPlaces = places.filter(place => 
-//         place.location.toLowerCase().includes(query) || 
+//     const filteredPlaces = places.filter(place =>
+//         place.location.toLowerCase().includes(query) ||
 //         place.postalCode.includes(query)
 //     );
 //     displayPlaces(filteredPlaces);
