@@ -99,16 +99,16 @@
         <div class="meeting-body p-5 mb-1">
             <div class="container-fluid py-1 text-center">
                 <h1 class="display-5 fw-bold"> Puntos de Encuentro </h1>
-                <p class="col-md-0 fs-5 mt-3">
-                    ¿Querés saber cuáles son los lugares donde podés entregar o recibir kéfir? Buscá por tu zona completando en el campo de
-                    abajo.
+                <p class="col-md-0 fs-5 mt-3 mx-auto">
+                    ¿Buscabas lugares para entregar o recibir gránulos de kéfir? Completá los campos de abajo.
                 </p>
             </div>
             <!-- FORM -->
             <form class="row g-3 justify-content-center" id="searchForm" onsubmit="return validateForm()">
                 <div class="col-md-6">
                     <label for="inputLocation" class="form-label form-label-lg">Localidad/Código postal</label>
-                    <input type="text" class="form-control form-control-lg" id="inputLocation" placeholder="Buscar..." required>
+                    <input type="text" class="form-control form-control-lg" id="inputLocation" placeholder="Buscar..."
+                        required>
                 </div>
                 <div class="col-md-5">
                     <label for="inputType" class="form-label">Tipo de kéfir</label>
@@ -119,10 +119,11 @@
                     </select>
                 </div>
                 <div class="col-md-11">
-                    <button type="submit" class="btn btn-outline-secondary btn-lg w-100 py-2 my-3">Realizar búsqueda</button>
+                    <button type="submit" class="btn btn-outline-secondary btn-lg w-100 py-2 my-3">Realizar
+                        búsqueda</button>
                 </div>
             </form>
-            
+
             <div class="m-3" id="locationList" style="display: none;">
                 <h2 class="text-center"> Puntos cercanos: </h2>
                 <ul class="list-group" id="locationsUl"></ul>
