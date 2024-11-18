@@ -96,7 +96,7 @@ function searchLocations() {
         filteredLocations.forEach(location => {
             const li = document.createElement("li");
             li.classList.add("list-group-item");
-            li.textContent = `${location.name} - ${location.address} (C.P. ${location.postalCode})`;
+            li.textContent = `${location.name} - ${location.address} (Código Postal: ${location.postalCode})`;
             locationsUl.appendChild(li);
         });
         locationList.style.display = "block";
