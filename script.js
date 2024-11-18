@@ -76,17 +76,30 @@ function handleSearch(event) {
 }
 
 function validateForm() {
-    const input = document.getElementById('searchInput').value;
-    // if (input.trim() === "") {
-    //     alert("¡ERROR! El campo no puede estar vacío.");
-    //     return false;
-    // }
-    const regex = /^[a-zA-Z0-9]+$/;
-    if (!regex.test(input)) {
-        alert("¡ERROR! Solo se aceptan letras y números.");
+    const searchInput = document.getElementById('searchInput').value;
+    const errorMessage = document.getElementById('errorMessage');
+    const locationList = document.getElementById('locationList');
+    errorMessage.style.display = 'none';
+    locationList.style.display = 'none';
+    locationList.innerHTML = '';
+
+    const puntosDeEncuentro = [];
+
+    if (puntosDeEncuentro.length === 0) {
+        errorMessage.innerText = 'No existen puntos de encuentro por esta zona.';
+        errorMessage.style.display = 'block';
         return false;
     }
-    return true;
+    puntosDeEncuentro.forEach(punto => {
+        const listItem = document.createElement('li');
+        listItem.className = 'list-group-item';
+        listItem.textContent = punto;
+        locationList.appendChild(listItem);
+    });
+
+    locationList.style.display = 'block';
+
+    return false;
 }
 
 document.getElementById('searchForm').addEventListener('submit', handleSearch);

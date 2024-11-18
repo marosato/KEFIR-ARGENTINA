@@ -466,6 +466,13 @@ nav .navbar-buttons .btn:hover {
     background-color: var(--bs-body-bg);
 }
 
+#meeting-points #errorMessage {
+    background-color: var(--bs-tertiary-bg);
+    color: var(--bs-secondary-color) !important;
+    text-transform: uppercase !important;
+    font-style: italic;
+}
+
 /*  -----------------------------------
     |             F A Q s             |
     -----------------------------------  */
