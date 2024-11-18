@@ -1,4 +1,4 @@
-// KEFIR WATER
+// MEETING POINTS
 
 // Lista de Lugares
 const locations = [
@@ -89,10 +89,10 @@ function handleSearch(event) {
 }
 
 function validateForm(event) {
-    event.preventDefault(); // Evita que el formulario se envíe inmediatamente
+    event.preventDefault();
 
     const inputLocation = document.getElementById('inputLocation').value.trim();
-    const inputState = document.getElementById('inputState').value;
+    const inputType = document.getElementById('inputType').value;
     const errorMessage = document.getElementById('errorMessage');
     const locationList = document.getElementById('locationList');
 
@@ -106,15 +106,14 @@ function validateForm(event) {
         return false;
     }
 
-    if (inputState === "Elegir...") {
+    if (inputType === "Elegir...") {
         errorMessage.innerText = 'Por favor, selecciona un tipo de kéfir.';
         errorMessage.style.display = 'block';
         return false;
     }
 
-    // Aquí puedes llamar a la función que maneja la búsqueda
     handleSearch(event);
-    return true; // Si todo está bien, devuelve true
+    return true;
 }
 
 

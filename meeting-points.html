@@ -96,23 +96,24 @@
 
     <!-- MEETING POINTS -->
     <section class="container-xxl py-4 mt-5" id="meeting-points">
-        <div class="meeting-body p-4 mb-4">
+        <div class="meeting-body p-4 mb-1">
             <div class="container-fluid py-4 text-center">
                 <h1 class="display-5 fw-bold"> Lugares para entregar o recibir kéfir </h1>
                 <p class="col-md-0 fs-6 mt-3">
                     ¿Querés saber cuáles son los puntos de encuentro? Buscá por tu zona completando el campo de abajo.
                 </p>
             </div>
-
+            <!-- FORM -->
             <form class="container row g-3" id="searchForm" onsubmit="return validateForm()">
                 <div class="col-md-6">
                     <label for="inputLocation" class="form-label"> Localidad/Código postal </label>
                     <input type="text" class="form-control" id="inputLocation" placeholder="Buscar..." required>
-                    <div class="p-3 mb-1 mt-4 bg-dark text-white rounded-3" id="errorMessage" style="display: none;"></div>
+                    <div class="p-3 mb-1 mt-4 bg-dark text-white rounded-3" id="errorMessage" style="display: none;">
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label"> Tipo de kéfir </label>
-                    <select id="inputState" class="form-select">
+                    <label for="inputType" class="form-label"> Tipo de kéfir </label>
+                    <select id="inputType" class="form-select">
                         <option selected> Elegir... </option>
                         <option> Agua </option>
                         <option> Leche </option>
@@ -125,6 +126,18 @@
             <ul class="list-group mt-3" id="locationList" style="display: none;"></ul>
         </div>
     </section>
+
+    <!-- FOOTER -->
+    <div class="container-xxl" id="footer">
+        <footer class="py-3 my-0">
+            <a href="https://marosato.github.io/portfolio/" target="_blank" rel="noopener noreferrer"
+                class="align-items-center justify-content-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-body-secondary">
+                <p class="footer-credits text-center text-body-secondary mt-3">
+                    Creado por: Rosato, Macarena Ayelén.
+                </p>
+            </a>
+        </footer>
+    </div>
 
     <!-- JavaScript -->
     <script src="script.js"></script>

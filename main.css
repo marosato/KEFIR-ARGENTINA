@@ -185,7 +185,7 @@ small {
     #calculator .form-text {
         text-align: center !important;
     }
-    
+
     #footer a .footer-credits {
         margin-top: 22px;
     }
@@ -451,7 +451,8 @@ nav .navbar-buttons .btn:hover {
     color: var(--bs-secondary-color) !important;
 }
 
-#meeting-points #searchForm input {
+#meeting-points #searchForm input,
+#meeting-points #searchForm #inputType {
     color: var(--bs-secondary-color) !important;
 }
 
