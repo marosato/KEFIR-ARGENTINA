@@ -49,37 +49,6 @@ const locations = [
     { name: "Plaza San Cayetano", address: "San Cayetano & Rawson, Villa Bosch", postalCode: "1682" }
 ];
 
-const searchForm = document.getElementById('searchForm');
-const locationList = document.getElementById('locationList');
-const searchInput = document.getElementById('searchInput');
-
-searchForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar el comportamiento por defecto del formulario
-
-    const searchValue = searchInput.value.toLowerCase();
-    locationList.innerHTML = ''; // Limpiar la lista antes de mostrar resultados
-
-    // Filtrar las localidades según la búsqueda
-    const filteredLocations = locations.filter(location => 
-        location.name.toLowerCase().includes(searchValue) || 
-        location.postalCode.includes(searchValue)
-    );
-
-    // Mostrar resultados si hay coincidencias
-    if (filteredLocations.length > 0) {
-        filteredLocations.forEach(location => {
-            const listItem = document.createElement('li');
-            listItem.className = 'list-group-item';
-            listItem.textContent = `${location.name}, ${location.address} - CP: ${location.postalCode}`;
-            locationList.appendChild(listItem);
-        });
-        locationList.style.display = 'block'; // Mostrar la lista
-    } else {
-        locationList.innerHTML = '<li class="list-group-item">No se encontraron resultados.</li>';
-        locationList.style.display = 'block'; // Mostrar la lista incluso si no hay resultados
-    }
-});
-
 // Función para mostrar la lista de lugares
 function displayLocations(filteredLocations) {
     const locationList = document.getElementById('locationList');
@@ -90,6 +59,12 @@ function displayLocations(filteredLocations) {
         li.textContent = `${location.name} - ${location.address} (Código postal: ${location.postalCode})`;
         locationList.appendChild(li);
     });
+    // Mostrar la lista solo si hay resultados
+    if (filteredLocations.length > 0) {
+        locationList.style.display = 'block';
+    } else {
+        locationList.style.display = 'none';
+    }
 }
 
 // Función para manejar la búsqueda
@@ -105,8 +80,6 @@ function handleSearch(event) {
 }
 
 document.getElementById('searchForm').addEventListener('submit', handleSearch);
-
-displayLocations(locations);
 
 
 // const places = [

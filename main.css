@@ -118,7 +118,8 @@ small {
     }
 
     #meeting-points .list-group-item {
-        width: 70%;
+        width: 88%;
+        text-align: center;
     }
 }
 
@@ -177,10 +178,6 @@ small {
         padding-top: 6vh !important;
     }
 
-
-
-
-
     #calculator .form-text {
         text-align: center !important;
     }
@@ -188,6 +185,32 @@ small {
     #footer a .footer-credits {
         margin-top: 22px;
     }
+}
+
+
+
+#meeting-points {
+    background-color: var(--bs-primary) !important;
+}
+
+#meeting-points #searchForm {
+    margin: 0 auto;
+    color: var(--bs-secondary-color) !important;
+}
+
+#meeting-points #searchForm input {
+    color: var(--bs-secondary-color) !important;
+}
+
+#meeting-points .list-group-item {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-secondary-color);
+}
+
+#meeting-points .list-group-item:hover {
+    background-color: var(--bs-primary);
 }
 
 /*  ---------------------------------------
@@ -387,30 +410,7 @@ nav .navbar-buttons .btn:hover {
     font-weight: 700 !important;
 }
 
-#meeting-points {
-    background-color: var(--bs-primary) !important;
-}
 
-#meeting-points #searchForm {
-    width: 70% !important;
-    margin: 0 auto;
-    color: var(--bs-secondary-color) !important;
-}
-
-#meeting-points #searchForm input {
-    color: var(--bs-secondary-color) !important;
-}
-
-#meeting-points .list-group-item {
-    display: block;
-    margin: 0 auto;
-    background-color: var(--bs-body-bg);
-    color: var(--bs-secondary-color);
-}
-
-#meeting-points .list-group-item:hover {
-    background-color: var(--bs-primary);
-}
 
 /*  -----------------------------------------------
     |             C A L C U L A T O R             |
@@ -540,6 +540,4 @@ footer {
 
 footer a .footer-credits {
     font-style: italic;
-    /* text-transform: uppercase; */
-    /* text-decoration: underline; */
 }
