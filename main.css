@@ -116,6 +116,10 @@ small {
     #home {
         margin-top: 40px;
     }
+
+    #meeting-points .list-group-item {
+        width: 70%;
+    }
 }
 
 /* Laptops */
@@ -133,6 +137,10 @@ small {
         max-width: 100%;
         margin: 0 auto;
         padding: 40px;
+    }
+
+    #meeting-points .list-group-item {
+        width: 100%;
     }
 }
 
@@ -158,7 +166,8 @@ small {
         padding: 0vh !important;
     }
 
-    #about .about-body, #about .about-card {
+    #about .about-body,
+    #about .about-card {
         padding: 4vh !important;
     }
 
@@ -167,6 +176,10 @@ small {
         padding: 4vh !important;
         padding-top: 6vh !important;
     }
+
+
+
+
 
     #calculator .form-text {
         text-align: center !important;
@@ -279,8 +292,6 @@ nav .navbar-buttons .btn:hover {
     text-wrap: wrap !important;
 }
 
-
-
 /*  -------------------------------------
     |             T Y P E S             |
     -------------------------------------  */
@@ -322,7 +333,6 @@ nav .navbar-buttons .btn:hover {
     font-style: italic !important;
     /* font-weight: 500 !important; */
     text-align: center;
-
 }
 
 /*  -----------------------------------------------
@@ -375,6 +385,31 @@ nav .navbar-buttons .btn:hover {
 #kefir-water .warning {
     font-style: italic !important;
     font-weight: 700 !important;
+}
+
+#meeting-points {
+    background-color: var(--bs-primary) !important;
+}
+
+#meeting-points #searchForm {
+    width: 70% !important;
+    margin: 0 auto;
+    color: var(--bs-secondary-color) !important;
+}
+
+#meeting-points #searchForm input {
+    color: var(--bs-secondary-color) !important;
+}
+
+#meeting-points .list-group-item {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-secondary-color);
+}
+
+#meeting-points .list-group-item:hover {
+    background-color: var(--bs-primary);
 }
 
 /*  -----------------------------------------------

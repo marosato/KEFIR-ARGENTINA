@@ -119,7 +119,8 @@
 
         <div class="kefir-water-card p-3 mb-4 text-center bg-body-tertiary">
             <p class="col-md-0 fs-4 p-2">
-                🎬 Los videotutoriales están en su proceso de fermentación editorial, ¡pronto los tendrás en tu pantalla! 🎬
+                🎬 Los videotutoriales están en su proceso de fermentación editorial, ¡pronto los tendrás en tu
+                pantalla! 🎬
             </p>
         </div>
 
@@ -175,6 +176,23 @@
                         </li>
                     </ol>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-xxl py-4" id="meeting-points">
+        <div class="p-5 mb-3">
+            <div class="container-fluid py-1">
+                <h1 class="display-5 fw-bold text-center"> Lugares para entregar o recibir kéfir </h1>
+                <p class="col-md-0 fs-4 text-center">
+                    ¿Querés saber cuáles son los puntos de encuentro? Completá el formulario.
+                </p>
+                <form class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4" id="searchForm">
+                    <input class="form-control form-control-lg me-2" type="search" id="searchInput"
+                        placeholder="Busca aquí por localidad o código postal" aria-label="Search">
+                    <button class="btn btn-outline-success btn-lg" type="submit"> Buscar </button>
+                </form>
+                <ul class="list-group mt-4" id="locationList" style="display: none;"></ul>
             </div>
         </div>
     </section>
@@ -307,6 +325,9 @@
             </a>
         </footer>
     </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 
