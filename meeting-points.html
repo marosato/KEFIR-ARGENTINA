@@ -101,30 +101,29 @@
                 <h1 class="display-5 fw-bold"> Puntos de Encuentro </h1>
                 <p class="col-md-0 fs-5 mt-3 mx-auto">
                     Esta sección te permite encontrar lugares disponibles para entregar o recibir nódulos de kéfir. Al
-                    completar el formulario, podrás ver los puntos cercanos donde realizar el intercambio.
+                    completar el formulario, podrás ver los puntos cercanos.
                 </p>
             </div>
-            <!-- FORM -->
             <form class="row g-3 justify-content-center" id="searchForm" onsubmit="return validateForm()">
                 <div class="col-md-6">
-                    <label for="inputLocation" class="form-label form-label-lg">Localidad/Código postal</label>
+                    <label for="inputLocation" class="form-label form-label-lg"> Localidad/Código postal </label>
                     <input type="text" class="form-control form-control-lg" id="inputLocation" placeholder="Buscar..."
                         required>
                 </div>
                 <div class="col-md-5">
-                    <label for="inputType" class="form-label">Tipo de kéfir</label>
+                    <label for="inputType" class="form-label"> Tipo de kéfir </label>
                     <select id="inputType" class="form-select form-select-lg" required>
-                        <option value="" disabled selected>Elegir...</option>
-                        <option value="Kéfir de Agua">Kéfir de Agua</option>
-                        <option value="Kéfir de Leche">Kéfir de Leche</option>
+                        <option value="" disabled selected> Elegir... </option>
+                        <option value="Kéfir de Agua"> Kéfir de Agua </option>
+                        <option value="Kéfir de Leche"> Kéfir de Leche </option>
                     </select>
                 </div>
                 <div class="col-md-11">
-                    <button type="submit" class="btn btn-outline-secondary btn-lg w-100 py-2 my-3">Realizar
-                        búsqueda</button>
+                    <button type="submit" class="btn btn-outline-secondary btn-lg w-100 py-2 my-3">
+                        Realizar búsqueda
+                    </button>
                 </div>
             </form>
-
             <div class="m-3" id="locationList" style="display: none;">
                 <h2 class="text-center"> Puntos cercanos: </h2>
                 <ul class="list-group" id="locationsUl"></ul>
@@ -133,7 +132,7 @@
     </section>
 
     <!-- FOOTER -->
-    <div class="container-xl" id="footer">
+    <!-- <div class="container-xl" id="footer">
         <footer class="py-3 my-0">
             <a href="https://marosato.github.io/portfolio/" target="_blank" rel="noopener noreferrer"
                 class="align-items-center justify-content-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none text-body-secondary">
@@ -141,6 +140,24 @@
                     Creado por: Rosato, Macarena Ayelén.
                 </p>
             </a>
+        </footer>
+    </div> -->
+
+    <!-- FOOTER -->
+    <div class="container-xl">
+        <footer class="py-3 my-0">
+            <p class="text-center text-body-secondary mt-3">
+                <a class="footer-credits px-1 text-body-secondary text-decoration-none"
+                    href="https://emmecreations.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    Sitio web diseñado por: EMME CREATIONS.
+                </a>
+            </p>
+            <p class="text-center text-body-secondary mt-3">
+                <a class="footer-credits px-1 text-body-secondary text-decoration-none"
+                    href="https://marosato.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
+                    Creado y pensado por: ROSATO, MACARENA AYELÉN.
+                </a>
+            </p>
         </footer>
     </div>
 
