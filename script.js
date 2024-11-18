@@ -55,7 +55,6 @@ function displayLocations(filteredLocations) {
         li.textContent = `${location.name} - ${location.address} (Código postal: ${location.postalCode})`;
         locationList.appendChild(li);
     });
-    // Mostrar la lista solo si hay resultados
     if (filteredLocations.length > 0) {
         locationList.style.display = 'block';
     } else {
@@ -63,10 +62,24 @@ function displayLocations(filteredLocations) {
     }
 }
 
-// Función para manejar la búsqueda
+const locationList = document.getElementById('locationList');
+const errorMessage = document.getElementById('errorMessage');
+const inputLocation = document.getElementById('inputLocation');
+
+function displayLocations(filteredLocations) {
+    locationList.innerHTML = '';
+    filteredLocations.forEach(location => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item';
+        li.textContent = `${location.name} - ${location.address} (Código postal: ${location.postalCode})`;
+        locationList.appendChild(li);
+    });
+    locationList.style.display = filteredLocations.length > 0 ? 'block' : 'none';
+}
+
 function handleSearch(event) {
     event.preventDefault();
-    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    const searchTerm = inputLocation.value.toLowerCase();
     const filteredLocations = locations.filter(location =>
         location.name.toLowerCase().includes(searchTerm) ||
         location.address.toLowerCase().includes(searchTerm) ||
@@ -75,42 +88,37 @@ function handleSearch(event) {
     displayLocations(filteredLocations);
 }
 
-function validateForm() {
-    const searchInput = document.getElementById('searchInput').value;
+function validateForm(event) {
+    event.preventDefault(); // Evita que el formulario se envíe inmediatamente
+
+    const inputLocation = document.getElementById('inputLocation').value.trim();
+    const inputState = document.getElementById('inputState').value;
     const errorMessage = document.getElementById('errorMessage');
     const locationList = document.getElementById('locationList');
+
     errorMessage.style.display = 'none';
     locationList.style.display = 'none';
     locationList.innerHTML = '';
 
-    // Filtrar los lugares basados en la búsqueda
-    const filteredLocations = locations.filter(location =>
-        location.name.toLowerCase().includes(searchInput.toLowerCase()) ||
-        location.address.toLowerCase().includes(searchInput.toLowerCase()) ||
-        location.postalCode.includes(searchInput)
-    );
-
-    // Comprobar si hay puntos de encuentro
-    if (filteredLocations.length === 0) {
-        errorMessage.innerText = 'No existen puntos de encuentro en esta zona.';
+    if (!inputLocation) {
+        errorMessage.innerText = 'Por favor, ingresa una localidad o código postal.';
         errorMessage.style.display = 'block';
         return false;
     }
 
-    // Mostrar los puntos de encuentro encontrados
-    filteredLocations.forEach(location => {
-        const listItem = document.createElement('li');
-        listItem.className = 'list-group-item';
-        listItem.textContent = `${location.name} - ${location.address} (Código postal: ${location.postalCode})`;
-        locationList.appendChild(listItem);
-    });
+    if (inputState === "Elegir...") {
+        errorMessage.innerText = 'Por favor, selecciona un tipo de kéfir.';
+        errorMessage.style.display = 'block';
+        return false;
+    }
 
-    locationList.style.display = 'block';
-
-    return false;
+    // Aquí puedes llamar a la función que maneja la búsqueda
+    handleSearch(event);
+    return true; // Si todo está bien, devuelve true
 }
 
-document.getElementById('searchForm').addEventListener('submit', handleSearch);
+
+document.getElementById('searchForm').addEventListener('submit', validateForm);
 
 
 // const places = [
