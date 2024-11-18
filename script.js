@@ -92,7 +92,7 @@ function validateForm() {
 
     // Comprobar si hay puntos de encuentro
     if (filteredLocations.length === 0) {
-        errorMessage.innerText = 'No existen puntos de encuentro por esta zona.';
+        errorMessage.innerText = 'No existen puntos de encuentro en esta zona.';
         errorMessage.style.display = 'block';
         return false;
     }
