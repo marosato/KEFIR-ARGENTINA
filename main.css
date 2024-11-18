@@ -178,10 +178,14 @@ small {
         padding-top: 6vh !important;
     }
 
+    #meeting-points #searchForm .form-text {
+        text-align: center;
+    }
+
     #calculator .form-text {
         text-align: center !important;
     }
-
+    
     #footer a .footer-credits {
         margin-top: 22px;
     }
@@ -212,6 +216,8 @@ small {
 #meeting-points .list-group-item:hover {
     background-color: var(--bs-body-bg);
 }
+
+
 
 /*  ---------------------------------------
     |             N A V B A R             |
