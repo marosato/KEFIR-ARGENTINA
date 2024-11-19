@@ -178,20 +178,16 @@ small {
         padding-top: 6vh !important;
     }
 
+    #meeting-points .meeting-body {
+        padding: 2.5vh !important;
+    }
+
     #meeting-points #searchForm .form-text {
         text-align: center;
     }
 
     #calculator .form-text {
         text-align: center !important;
-    }
-
-    #meeting-points .meeting-body {
-        padding: 4vh !important;
-    }
-
-    #footer a .footer-credits {
-        margin-top: 22px;
     }
 }
 
