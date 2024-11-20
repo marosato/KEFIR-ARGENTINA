@@ -472,8 +472,6 @@ nav .navbar-buttons .btn:hover {
     font-style: italic;
 }
 
-
-
 /*  -----------------------------------
     |             F A Q s             |
     -----------------------------------  */
@@ -524,9 +522,7 @@ nav .navbar-buttons .btn:hover {
     color: var(--bs-secondary-color);
 }
 
-/*
-
-#FAQs .accordion-button {
+/* #FAQs .accordion-button {
     background-color: var(--bs-primary) !important;
     color: var(--bs-secondary-color) !important;
     font-size: large !important;
@@ -556,10 +552,13 @@ footer h5 {
     font-weight: 600;
 }
 
-footer .nav-link:hover {
+footer a:hover {
     color: var(--bs-tertiary-bg) !important;
 }
 
+footer a svg:hover {
+    color: var(--bs-tertiary-bg) !important;
+}
 
 footer .footer-credits {
     font-style: italic;
