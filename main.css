@@ -245,8 +245,10 @@ nav .navbar-buttons .btn:hover {
 /*  -----------------------------------
     |             H O M E             |
     -----------------------------------  */
+
 #home .home-body {
     background-color: var(--bs-primary);
+
 }
 
 /* FONDO DE HOME-BACKGROUND*/
@@ -283,7 +285,7 @@ nav .navbar-buttons .btn:hover {
     -------------------------------------  */
 
 #about .about-body,
-.about-card {
+#about .about-card {
     background-color: var(--bs-primary) !important;
 }
 
