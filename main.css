@@ -113,9 +113,9 @@ small {
         padding: 10px;
     }
 
-    #home {
+    /* #home {
         margin-top: 40px;
-    }
+    } */
 
     #meeting-points .list-group-item {
         width: 88%;
@@ -167,6 +167,7 @@ small {
         padding: 0vh !important;
     }
 
+    #home .home-body,
     #about .about-body,
     #about .about-card {
         padding: 4vh !important;
@@ -244,16 +245,13 @@ nav .navbar-buttons .btn:hover {
 /*  -----------------------------------
     |             H O M E             |
     -----------------------------------  */
+#home .home-body {
+    background-color: var(--bs-primary);
+}
+
+/* FONDO DE HOME-BACKGROUND*/
 
 /* #home .home-body {
-    background-image: url('https://food.fnr.sndimg.com/content/dam/images/food/fullset/2024/05/23/kefir-in-glass-jar-and-on-wooden-spoon-on-burlap-bag.jpg.rend.hgtvcom.1280.960.suffix/1716467858997.jpeg') !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
-} */
-
-#home .home-body {
     position: relative;
 }
 
@@ -272,7 +270,7 @@ nav .navbar-buttons .btn:hover {
     object-fit: cover;
     filter: blur(5px);
     opacity: 0.2;
-}
+} */
 
 .disclaimer {
     font-weight: 900;
@@ -551,6 +549,17 @@ nav .navbar-buttons .btn:hover {
 footer {
     background-color: var(--bs-primary);
 }
+
+footer h5 {
+    color: var(--bs-secondary-color) !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+footer .nav-link:hover {
+    color: var(--bs-tertiary-bg) !important;
+}
+
 
 footer .footer-credits {
     font-style: italic;
