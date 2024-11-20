@@ -148,28 +148,32 @@ small {
 /* Celulares */
 @media only screen and (max-width: 767px) {
     body {
-        max-width: 100%;
         margin: 0 auto;
-        padding: 10px;
+        padding: 0vh !important;
+        text-align: center !important;
     }
 
     nav .navbar-nav {
         margin-top: 1vh;
     }
 
-    #home {
-        margin-top: 11vh;
+    #home .home-body {
+        padding: 2vh !important;
+        text-wrap: balance !important;
     }
 
-    #home .home-body .container-fluid,
+    /* #home .home-body .container-fluid,
     #about .about-body .container-fluid,
     #types .types-body .container-fluid {
         padding: 0vh !important;
-    }
+    } */
 
     #about .about-body,
-    #about .about-card {
+    #about .about-card,
+    #types .types-body,
+    #FAQS .FAQs-body {
         padding: 4vh !important;
+        text-wrap: balance !important;
     }
 
     #kefir-water .kefir-water-card,
@@ -204,8 +208,9 @@ nav .navbar-brand {
 nav,
 nav a,
 nav .nav-link {
-    background-color: var(--bs-body-bg);
-    color: var(--bs-secondary-color) !important;
+  background-color: var(--bs-body-bg) !important;
+  color: var(--bs-secondary-color) !important;
+  font-size: large;
 }
 
 nav .nav-link svg {
@@ -244,6 +249,7 @@ nav .navbar-buttons .btn:hover {
 /*  -----------------------------------
     |             H O M E             |
     -----------------------------------  */
+
 
 
 
