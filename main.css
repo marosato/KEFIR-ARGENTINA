@@ -170,28 +170,29 @@ small {
 
     #about .about-body,
     #about .about-card,
-    #types .types-body {
-    padding: 4vh !important;
-    text-wrap: balance !important;
-}
+    #types .types-body,
+    #types .types-card {
+        padding: 6vh !important;
+        text-wrap: balance !important;
+    }
 
-#kefir-water .kefir-water-card,
-#kefir-milk .kefir-milk-card {
-    padding: 4vh !important;
-    padding-top: 6vh !important;
-}
+    #kefir-water .kefir-water-card,
+    #kefir-milk .kefir-milk-card {
+        padding: 4vh !important;
+        padding-top: 6vh !important;
+    }
 
-#meeting-points .meeting-body {
-    padding: 2.5vh !important;
-}
+    #meeting-points .meeting-body {
+        padding: 2.5vh !important;
+    }
 
-#meeting-points #searchForm .form-text {
-    text-align: center;
-}
+    #meeting-points #searchForm .form-text {
+        text-align: center;
+    }
 
-#calculator .form-text {
-    text-align: center !important;
-}
+    #calculator .form-text {
+        text-align: center !important;
+    }
 }
 
 /*  ---------------------------------------
