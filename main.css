@@ -156,7 +156,8 @@ small {
         margin-top: 1vh;
     }
 
-    #home .home-body {
+    #home .home-body,
+    #FAQS .FAQs-body {
         padding: 2vh !important;
         text-wrap: balance !important;
     }
@@ -169,29 +170,28 @@ small {
 
     #about .about-body,
     #about .about-card,
-    #types .types-body,
-    #FAQS .FAQs-body {
-        padding: 4vh !important;
-        text-wrap: balance !important;
-    }
+    #types .types-body {
+    padding: 4vh !important;
+    text-wrap: balance !important;
+}
 
-    #kefir-water .kefir-water-card,
-    #kefir-milk .kefir-milk-card {
-        padding: 4vh !important;
-        padding-top: 6vh !important;
-    }
+#kefir-water .kefir-water-card,
+#kefir-milk .kefir-milk-card {
+    padding: 4vh !important;
+    padding-top: 6vh !important;
+}
 
-    #meeting-points .meeting-body {
-        padding: 2.5vh !important;
-    }
+#meeting-points .meeting-body {
+    padding: 2.5vh !important;
+}
 
-    #meeting-points #searchForm .form-text {
-        text-align: center;
-    }
+#meeting-points #searchForm .form-text {
+    text-align: center;
+}
 
-    #calculator .form-text {
-        text-align: center !important;
-    }
+#calculator .form-text {
+    text-align: center !important;
+}
 }
 
 /*  ---------------------------------------
@@ -207,9 +207,9 @@ nav .navbar-brand {
 nav,
 nav a,
 nav .nav-link {
-  background-color: var(--bs-body-bg) !important;
-  color: var(--bs-secondary-color) !important;
-  font-size: large;
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-secondary-color) !important;
+    font-size: large;
 }
 
 nav .nav-link svg {
