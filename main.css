@@ -164,7 +164,8 @@ small {
 
     #home .home-body .container-fluid,
     #about .about-body .container-fluid,
-    #types .types-body .container-fluid {
+    #types .types-body .container-fluid,
+    #FAQS .FAQs-body .container-fluid {
         padding: 0vh !important;
         text-wrap: balance !important;
     }
