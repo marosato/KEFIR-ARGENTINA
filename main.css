@@ -249,9 +249,6 @@ nav .navbar-buttons .btn:hover {
     |             H O M E             |
     -----------------------------------  */
 
-
-
-
 /* FONDO DE HOME-BACKGROUND*/
 
 #home .home-body {
@@ -521,7 +518,7 @@ nav .navbar-buttons .btn:hover {
 }
 
 #FAQs .accordion-collapse {
-    background-color: var(--bs-body-bg);
+    background-color: var(--bs-primary);
     color: var(--bs-secondary-color);
 }
 
