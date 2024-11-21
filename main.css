@@ -149,20 +149,19 @@ small {
 @media only screen and (max-width: 767px) {
     body {
         margin: 0 auto;
-
     }
 
     nav .navbar-nav {
         margin-top: 1vh;
     }
 
-    #home .home-body,
-    #FAQS .FAQs-body {
-        padding: 2vh !important;
+    #home .home-body {
+        padding: 4vh !important;
         text-wrap: balance !important;
+        margin-top: 2vh;
     }
 
-    #home .home-body .container-fluid,
+
     #about .about-body .container-fluid,
     #types .types-body .container-fluid,
     #FAQS .FAQs-body .container-fluid {
