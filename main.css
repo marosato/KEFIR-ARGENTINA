@@ -162,17 +162,16 @@ small {
         text-wrap: balance !important;
     }
 
-    /* #home .home-body .container-fluid,
+    #home .home-body .container-fluid,
     #about .about-body .container-fluid,
     #types .types-body .container-fluid {
         padding: 0vh !important;
-    } */
+        text-wrap: balance !important;
+    }
 
     #about .about-body,
-    #about .about-card,
-    #types .types-body,
-    #types .types-card {
-        padding: 6vh !important;
+    #about .about-card {
+        padding: 4vh !important;
         text-wrap: balance !important;
     }
 
