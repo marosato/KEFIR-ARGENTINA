@@ -156,7 +156,7 @@ small {
     }
 
     #home .home-body, #home .home-body .container-fluid {
-        padding: 4vh !important;
+        padding: 3vh !important;
         text-wrap: balance !important;
         margin-top: 1vh;
     }
