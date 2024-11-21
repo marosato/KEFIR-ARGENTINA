@@ -155,13 +155,13 @@ small {
         margin-top: 1vh;
     }
 
-    #home .home-body {
+    #home .home-body, #home .home-body .container-fluid {
         padding: 4vh !important;
         text-wrap: balance !important;
         margin-top: 1vh;
     }
 
-
+    
     #about .about-body .container-fluid,
     #types .types-body .container-fluid,
     #FAQS .FAQs-body .container-fluid {
@@ -198,17 +198,26 @@ small {
     |             N A V B A R             |
     ---------------------------------------  */
 
+nav {
+    background-color: var(--bs-body-bg);
+}
+
 nav .navbar-brand {
     color: var(--bs-secondary-color);
-    font-family: var(--bs-font-title) !important;
     letter-spacing: 0.06em;
 }
 
-nav,
-nav a,
+nav .navbar-brand:hover {
+    color: var(--bs-tertiary-bg) !important;
+}
+
 nav .nav-link {
-    background-color: var(--bs-body-bg) !important;
-    color: var(--bs-secondary-color) !important;
+    color: var(--bs-secondary-color);
+    font-size: large;
+}
+
+nav .nav-link:hover {
+    color: var(--bs-tertiary-bg) !important;
     font-size: large;
 }
 
@@ -219,18 +228,19 @@ nav .nav-link svg {
 }
 
 nav .navbar-icon svg {
-    color: var(--bs-secondary-color) !important;
+    color: var(--bs-secondary-color);
     height: 30px;
     cursor: pointer;
 }
 
 nav .navbar-toggler {
+    
     color: var(--bs-secondary-color) !important;
     border-color: var(--bs-secondary-color);
     border: none;
 }
 
-/* REGISTER BUTTONS */
+/* NAVBAR BUTTONS */
 nav .navbar-buttons .btn,
 nav .navbar-buttons .btn:hover {
     color: var(--bs-secondary-color) !important;
