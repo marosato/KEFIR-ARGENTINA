@@ -155,12 +155,16 @@ small {
         margin-top: 1vh;
     }
 
+    nav .navbar-buttons .btn {
+        color: var(--bs-secondary-color) !important;
+        padding: 1.3vh;
+    }
+
     #home .home-body, #home .home-body .container-fluid {
         padding: 3vh !important;
         text-wrap: balance !important;
         margin-top: 1vh;
     }
-
     
     #about .about-body .container-fluid,
     #types .types-body .container-fluid,
@@ -234,25 +238,20 @@ nav .navbar-icon svg {
 }
 
 nav .navbar-toggler {
-    
     color: var(--bs-secondary-color) !important;
     border-color: var(--bs-secondary-color);
     border: none;
 }
 
 /* NAVBAR BUTTONS */
-nav .navbar-buttons .btn,
-nav .navbar-buttons .btn:hover {
+nav .navbar-buttons .btn {
     color: var(--bs-secondary-color) !important;
-    border-color: var(--bs-secondary-color);
-    font-weight: 500;
 }
 
 nav .navbar-buttons .btn:hover {
     background-color: var(--bs-secondary-color) !important;
     color: var(--bs-primary) !important;
-    border-color: var(--bs-secondary-color);
-    font-weight: 500;
+    font-weight: bold !important;
 }
 
 /*  -----------------------------------
