@@ -191,6 +191,7 @@ small {
 
     #meeting-points #searchForm .form-text {
         text-align: center;
+        margin-top: 0vh !important;
     }
 
     #calculator .form-text {
@@ -451,6 +452,10 @@ nav .navbar-buttons .btn:hover {
 
 #meeting-points .meeting-body {
     background-color: var(--bs-primary) !important;
+}
+
+#meeting-points .meeting-body h1,  #meeting-points .meeting-body p {
+    text-align: center;
 }
 
 #meeting-points #searchForm {

@@ -97,37 +97,38 @@
     <!-- MEETING POINTS -->
     <section class="container-xl py-4 mt-5" id="meeting-points">
         <div class="meeting-body p-5 mb-0">
-            <div class="container-fluid py-4 text-center">
+            <div class="container-fluid py-4">
                 <h1 class="display-5 fw-bold"> Puntos de Encuentro </h1>
-                <p class="col-md-0 fs-5 mt-3 mx-auto">
+                <p class="col-md-0 fs-5 mt-3 text-center">
                     Esta sección te permite encontrar lugares disponibles para entregar o recibir nódulos de kéfir. Al
                     completar el formulario, podrás ver los puntos cercanos.
                 </p>
+                <form class="row g-3 justify-content-center" id="searchForm" onsubmit="return validateForm()">
+                    <div class="col-md-6">
+                        <label for="inputLocation" class="form-label form-label-lg"> Localidad/Código postal </label>
+                        <input type="text" class="form-control form-control-lg" id="inputLocation" placeholder="Buscar..."
+                            required>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="inputType" class="form-label"> Tipo de kéfir </label>
+                        <select id="inputType" class="form-select form-select-lg" required>
+                            <option value="" disabled selected> Elegir... </option>
+                            <option value="Kéfir de Agua"> Kéfir de Agua </option>
+                            <option value="Kéfir de Leche"> Kéfir de Leche </option>
+                        </select>
+                    </div>
+                    <div class="col-md-11">
+                        <button type="submit" class="btn btn-outline-secondary btn-lg w-100 py-2 my-3">
+                            Realizar búsqueda
+                        </button>
+                    </div>
+                </form>
+                <div class="m-3" id="locationList" style="display: none;">
+                    <h2 class="text-center"> Puntos cercanos: </h2>
+                    <ul class="list-group" id="locationsUl"></ul>
+                </div>
             </div>
-            <form class="row g-3 justify-content-center" id="searchForm" onsubmit="return validateForm()">
-                <div class="col-md-6">
-                    <label for="inputLocation" class="form-label form-label-lg"> Localidad/Código postal </label>
-                    <input type="text" class="form-control form-control-lg" id="inputLocation" placeholder="Buscar..."
-                        required>
-                </div>
-                <div class="col-md-5">
-                    <label for="inputType" class="form-label"> Tipo de kéfir </label>
-                    <select id="inputType" class="form-select form-select-lg" required>
-                        <option value="" disabled selected> Elegir... </option>
-                        <option value="Kéfir de Agua"> Kéfir de Agua </option>
-                        <option value="Kéfir de Leche"> Kéfir de Leche </option>
-                    </select>
-                </div>
-                <div class="col-md-11">
-                    <button type="submit" class="btn btn-outline-secondary btn-lg w-100 py-2 my-3">
-                        Realizar búsqueda
-                    </button>
-                </div>
-            </form>
-            <div class="m-3" id="locationList" style="display: none;">
-                <h2 class="text-center"> Puntos cercanos: </h2>
-                <ul class="list-group" id="locationsUl"></ul>
-            </div>
+
         </div>
     </section>
 
