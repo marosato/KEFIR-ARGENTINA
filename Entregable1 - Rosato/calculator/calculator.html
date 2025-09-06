@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CALCULADORA DE KÉFIR − KÉFIR ARGENTINA </title>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="calculator.css">
+
+    <script src="calculator.js"></script>
 
     <!-- Details -->
     <link rel="canonical" href="https://kefir-argentina.vercel.app/">
@@ -88,7 +90,7 @@
                     </li>
                 </ul>
                 <div class="navbar-buttons d-grid gap-2 d-md-flex justify-content-md-end">
-                    <a class="btn btn-primary fw-bold" href="meeting-points.html" role="button" target="_blank"
+                    <a class="btn btn-primary fw-bold" href="/meeting-points.html" role="button" target="_blank"
                         rel="noopener noreferrer"> Puntos de Encuentro </a>
                 </div>
             </div>
@@ -104,6 +106,7 @@
                     Tené en cuenta que la cantidad de nódulos de kéfir <strong>puede variar</strong>
                     según el tipo de kéfir y la densidad de los nódulos.
                 </p>
+                <!-- Form -->
                 <form class="kefirForm" id="kefirForm">
                     <div class="mb-3 mt-4">
                         <label for="kefir-text" class="form-label"> Cantidad de nódulos (en gramos): </label>
@@ -308,70 +311,8 @@
         </footer>
     </div>
 
-    <!-- JAVASCRIPT -->
-    <script>
-
-        // document.getElementById('kefirForm').addEventListener('submit', handleFormSubmit);
-
-        // function handleFormSubmit(event) {
-        //     event.preventDefault();
-
-        //     const volumeInput = document.getElementById('volume');
-        //     const noduleAmount = parseInt(volumeInput.value);
-
-        //     if (isNaN(noduleAmount) || noduleAmount < 0) {
-        //         displayError('Por favor, ingrese una cantidad válida de nódulos.');
-        //         return;
-        //     }
-
-        //     const litersFermented = Math.floor(noduleAmount / 100); // Cambiado para que sea un número entero
-        //     const glasses = calculateGlasses(litersFermented);
-
-        //     displayResult(`Con ${noduleAmount} gramos de nódulos, se pueden fermentar ${litersFermented} litros de leche, lo que equivale aproximadamente ${glasses} vasos.`);
-        // }
-
-        // function calculateGlasses(liters) {
-        //     const glassCapacity = 0.25;
-        //     return Math.floor(liters / glassCapacity);
-        // }
-
-        // function displayError(message) {
-        //     const resultDiv = document.getElementById('results');
-        //     resultDiv.innerHTML = message;
-        // }
-
-        // function displayResult(message) {
-        //     const resultDiv = document.getElementById('results');
-        //     resultDiv.innerHTML = `RESULTADO: ${message}`;
-        // }
-
-        document.getElementById('kefirForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            const gramsInput = document.getElementById('kefir-grams').value;
-            const grams = parseFloat(gramsInput);
-
-            // Validación de datos
-            if (isNaN(grams) || grams <= 0) {
-                alert('Por favor, ingrese una cantidad válida de nódulos. No puede quedar el campo vacío.');
-                return;
-            }
-
-            const liters = grams / 100;
-            const glasses = liters * 4;
-
-            // Muestra los resultados
-            document.getElementById('results').innerHTML = `
-            <h3 class="mb-3 mt-4 text-center"> Resultados: </h3>
-            <p>
-                Con <strong>${grams} gramos</strong> de gránulos de kéfir, se pueden fermentar
-                <strong>${liters.toFixed(2)} litros</strong>,
-                lo que equivale a <strong>${glasses.toFixed(0)} vasos</strong>.
-            </p>
-            `;
-        });
-    </script>
-
+    <!-- JavaScript -->
+    <script src="calculator.js"></script>
 </body>
 
 </html>
